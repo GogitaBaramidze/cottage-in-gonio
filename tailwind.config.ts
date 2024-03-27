@@ -22,6 +22,11 @@ const config = {
             },
         },
         extend: {
+            backgroundImage: {
+                mainBg: "url('/images/mainBg.jpg')",
+                mainBgMobile: "url('/images/mainBgMobile.jpg')",
+            },
+
             colors: {
                 border: 'hsl(var(--border))',
                 input: 'hsl(var(--input))',
