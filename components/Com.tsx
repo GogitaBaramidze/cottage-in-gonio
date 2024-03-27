@@ -29,7 +29,7 @@ export default function Com() {
             <motion.div initial="hidden" whileInView="visible">
                 <motion.div
                     variants={textAnimation}
-                    className=" bg-mainBgMobile h-[700px] w-full bg-contain bg-no-repeat md:bg-mainBg  md:bg-contain"
+                    className=" bg-mainBg h-[700px] w-full bg-contain bg-no-repeat md:bg-mainBg  md:bg-contain"
                 ></motion.div>
             </motion.div>
             <motion.div initial="hidden" whileInView="visible">
