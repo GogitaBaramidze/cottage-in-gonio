@@ -7,9 +7,9 @@ import Logo from '../../public/images/logo.png'
 export default function Header() {
     return (
         <motion.main
-            initial={{ y: 0, opacity: 0 }} // Start off-screen, opaque, and slightly scaled down
+            initial={{ y: -100, opacity: 0 }} // Start off-screen, opaque, and slightly scaled down
             animate={{ y: 0, opacity: 1 }} // Animate down, fade in, and scale up
-            transition={{ duration: 0.5, ease: 'easeInOut' }} // Customize transition timing and easing
+            transition={{ duration: 0.7, ease: 'easeOut' }} // Customize transition timing and easing
             className="absolute flex w-full flex-row items-center justify-between px-6 py-3 transition-all md:px-16 md:py-4 lg:px-20"
             style={{
                 backdropFilter: 'blur(5px) saturate(150%)',
