@@ -9,7 +9,7 @@ async function Home({ params: { locale } }: { params: { locale: string } }) {
     return (
         <main>
             <p className="font-firaGo">{t('hello')}</p>
-            <p className="font-bgCaps">შემთხვევითად გენერირებული ტექსტი</p>
+            <p className="font-bgCaps">შატო ივერი</p>
             <p className="font-firaGo">Hello my name is </p>
             <p className="font-bgCaps">Hello my name is </p>
             <Button className="font-bgCaps">ღილაკი</Button>
