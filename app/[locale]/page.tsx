@@ -1,22 +1,13 @@
-import Com from '@/components/Com'
-import initTranslations from '../../utils/i18n'
-import Two from '@/components/Two'
-import Link from 'next/link'
+'use server'
 
-const i18nNamespaces = ['home']
+import SectionOne from './_components/SectionOne'
+import SectionTwo from './_components/SectionTwo'
 
-async function Home({ params: { locale } }: { params: { locale: string } }) {
-    const { t } = await initTranslations(locale, i18nNamespaces)
-
+async function Home() {
     return (
         <main className=" flex min-h-screen w-full flex-col">
-            <div className=" h-[700px] w-full bg-mainBg bg-contain bg-no-repeat md:bg-mainBg  md:bg-contain"></div>
-            <Link href="/login">
-                <h1 className="text-3xl text-[red]">goooooooooooo</h1>
-            </Link>
-            <Com />
-            <Two />
-            <h1>{t('hello')}</h1>
+            <SectionOne />
+            <SectionTwo />
         </main>
     )
 }

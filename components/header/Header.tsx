@@ -1,28 +1,48 @@
 'use client'
-
-import { motion } from 'framer-motion'
 import Image from 'next/image'
 import Logo from '../../public/images/logo.png'
+import { BurgerIcon } from '../svgs'
+import { useTranslation } from 'react-i18next'
+import Link from 'next/link'
+import { SheetDemo } from './BurgerMenu'
 
 export default function Header() {
+    const { t } = useTranslation()
     return (
-        <motion.main
-            initial={{ y: -100, opacity: 0 }} // Start off-screen, opaque, and slightly scaled down
-            animate={{ y: 0, opacity: 1 }} // Animate down, fade in, and scale up
-            transition={{ duration: 0.7, ease: 'easeOut' }} // Customize transition timing and easing
-            className="absolute flex w-full flex-row items-center justify-between px-6 py-3 transition-all md:px-16 md:py-4 lg:px-20"
+        <main
+            className="absolute flex w-full flex-row items-center justify-between px-5 py-2 transition-all md:px-7 md:py-3 xl:px-10 xl:py-3 "
             style={{
-                backdropFilter: 'blur(5px) saturate(150%)',
+                backdropFilter: 'blur(10px) saturate(150%)',
                 backgroundColor: 'rgba(255, 255, 255, 0.3)',
             }}
         >
-            <Image src={Logo} alt="Chateau iver logo" width={50} height={50} />
-            <div className="flex flex-row items-center text-xl font-medium uppercase text-white ">
-                <span className="ml-8">Home</span>
-                <span className="ml-8">Home</span>
-                <span className="ml-8">Home</span>
-                <span className="ml-8">Home</span>
+            <div className="relative h-16 w-20 md:h-16 md:w-20 xl:h-20 xl:w-24">
+                <Image
+                    src={Logo}
+                    alt="Chateau iver logo"
+                    layout="fill"
+                    className=" absolute cursor-pointer"
+                />
             </div>
-        </motion.main>
+            <div className="hidden flex-row items-center font-normal  text-white  md:flex md:text-base  xl:text-xl">
+                <Link href="/">
+                    <span className="cursor-pointer  underline-offset-8 hover:underline   md:ml-7">
+                        {t('main')}
+                    </span>
+                </Link>
+                <span className="cursor-pointer  underline-offset-8 hover:underline md:ml-7 ">
+                    {t('tourism')}
+                </span>
+                <span className="cursor-pointer  underline-offset-8 hover:underline md:ml-7 ">
+                    {t('winery')}
+                </span>
+                <span className="cursor-pointer underline-offset-8 hover:underline  md:ml-7">
+                    {t('about')}
+                </span>
+            </div>
+
+            <BurgerIcon className="cursor-pointer text-3xl md:hidden" />
+            <SheetDemo />
+        </main>
     )
 }

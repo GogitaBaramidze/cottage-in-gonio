@@ -1,23 +1,19 @@
 import TranslationsProvider from '@/providers/TranslationsProvider'
 import initTranslations from '../../utils/i18n'
-import localfont from 'next/font/local'
+import { Noto_Sans_Georgian } from 'next/font/google'
+
 import { ReactNode } from 'react'
 import { dir } from 'i18next'
 import './globals.css'
-import Header from '@/components/header/Header'
+import dynamic from 'next/dynamic'
 
-const firaGo = localfont({
-    src: [
-        {
-            path: '../../public/fonts/FiraGO-Regular.otf',
-            weight: '400',
-        },
-        {
-            path: '../../public/fonts/FiraGO-Medium.otf',
-            weight: '500',
-        },
-    ],
-    variable: '--font-firaGo',
+const Header = dynamic(() => import('../../components/header/Header'), {
+    ssr: true,
+})
+
+const notoSansGeorgian = Noto_Sans_Georgian({
+    weight: ['400', '500', '700'],
+    subsets: ['latin'],
 })
 
 export default async function RootLayout({
@@ -27,11 +23,11 @@ export default async function RootLayout({
     children: ReactNode
     params: { locale: string }
 }) {
-    const i18nNamespaces = ['home']
+    const i18nNamespaces = ['main']
     const { resources } = await initTranslations(locale, i18nNamespaces)
 
     return (
-        <html lang={locale} dir={dir(locale)} className={firaGo.className}>
+        <html lang={locale} dir={dir(locale)} className={notoSansGeorgian.className}>
             <body>
                 <TranslationsProvider
                     namespaces={i18nNamespaces}
