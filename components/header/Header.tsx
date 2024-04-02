@@ -1,20 +1,19 @@
 'use client'
 import Image from 'next/image'
 import Logo from '../../public/images/logo.png'
-import { BurgerIcon } from '../svgs'
 import { useTranslation } from 'react-i18next'
 import Link from 'next/link'
-import { SheetDemo } from './BurgerMenu'
+import { BurgerMenu } from './BurgerMenu'
 
 export default function Header() {
     const { t } = useTranslation()
     return (
         <main
-            className="absolute flex w-full flex-row items-center justify-between px-5 py-2 transition-all md:px-7 md:py-3 xl:px-10 xl:py-3 "
-            style={{
-                backdropFilter: 'blur(10px) saturate(150%)',
-                backgroundColor: 'rgba(255, 255, 255, 0.3)',
-            }}
+            className="absolute flex w-full flex-row items-center justify-between bg-[#958f1e203] px-5 py-2 transition-all md:px-7 md:py-3 xl:px-10 xl:py-3"
+            // style={{
+            //     backdropFilter: 'blur(10px) saturate(150%)',
+            //     backgroundColor: 'rgba(128, 0, 128, 0.3)', // Deep wine color with 30% opacity
+            // }}
         >
             <div className="relative h-16 w-20 md:h-16 md:w-20 xl:h-20 xl:w-24">
                 <Image
@@ -41,8 +40,7 @@ export default function Header() {
                 </span>
             </div>
 
-            <BurgerIcon className="cursor-pointer text-3xl md:hidden" />
-            <SheetDemo />
+            <BurgerMenu />
         </main>
     )
 }

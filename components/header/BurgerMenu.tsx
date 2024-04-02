@@ -1,49 +1,61 @@
-import { Button } from '@/components/ui/button'
-import { Input } from '@/components/ui/input'
-import { Label } from '@/components/ui/label'
-import {
-    Sheet,
-    SheetClose,
-    SheetContent,
-    SheetDescription,
-    SheetFooter,
-    SheetHeader,
-    SheetTitle,
-    SheetTrigger,
-} from '@/components/ui/sheet'
+import { Sheet, SheetClose, SheetContent, SheetTrigger } from '@/components/ui/sheet'
+import { BurgerIcon, EmailIcon, FbIcon, InstaIcon, WhatsappIcon } from '../svgs'
+import { useTranslation } from 'react-i18next'
+import { useRouter } from 'next/navigation'
+import { PhoneIcon } from '../svgs'
 
-export function SheetDemo() {
+export function BurgerMenu() {
+    const { t } = useTranslation()
+    const router = useRouter()
+    const handleLinkClick = (href: string) => {
+        router.push(href)
+    }
+
     return (
         <Sheet>
             <SheetTrigger asChild>
-                <Button variant="outline">Open</Button>
+                <BurgerIcon className="cursor-pointer text-3xl md:hidden" />
             </SheetTrigger>
-            <SheetContent>
-                <SheetHeader>
-                    <SheetTitle>Edit profile</SheetTitle>
-                    <SheetDescription>
-                        Make changes to your profile here. Click save when youre done.
-                    </SheetDescription>
-                </SheetHeader>
-                <div className="grid gap-4 py-4">
-                    <div className="grid grid-cols-4 items-center gap-4">
-                        <Label htmlFor="name" className="text-right">
-                            Name
-                        </Label>
-                        <Input id="name" value="Pedro Duarte" className="col-span-3" />
+            <SheetContent className="bg-[#F2F5FF]">
+                <div className="flex min-h-screen w-full flex-col justify-between  pb-12 pt-16">
+                    <div className="flex flex-col gap-6 ">
+                        <SheetClose
+                            onClick={() => handleLinkClick('/')}
+                            className="cursor-pointer text-left  underline-offset-8 hover:underline md:ml-7"
+                        >
+                            {t('main')}
+                        </SheetClose>
+
+                        <SheetClose
+                            onClick={() => handleLinkClick('/book')}
+                            className="cursor-pointer  text-left underline-offset-8  hover:underline md:ml-7 "
+                        >
+                            {t('tourism')}
+                        </SheetClose>
+                        <SheetClose className="cursor-pointer text-left   underline-offset-8 hover:underline md:ml-7 ">
+                            {t('winery')}
+                        </SheetClose>
+                        <SheetClose className="cursor-pointer text-left  underline-offset-8 hover:underline  md:ml-7">
+                            {t('about')}
+                        </SheetClose>
                     </div>
-                    <div className="grid grid-cols-4 items-center gap-4">
-                        <Label htmlFor="username" className="text-right">
-                            Username
-                        </Label>
-                        <Input id="username" value="@peduarte" className="col-span-3" />
+                    <div className="flex flex-col">
+                        <div className="flex w-full flex-row items-center">
+                            <PhoneIcon className="h-4 w-4 fill-[#484848]" />
+                            <span className="ml-2 text-sm text-[#484848] ">555 13 55 44 </span>
+                        </div>
+                        <div className="mt-4 flex w-full flex-row items-center">
+                            <EmailIcon className="h-4 w-4 fill-[#484848]" />
+                            <span className="ml-2 text-sm text-[#484848] ">beridze@mail.com</span>
+                        </div>
+                        <div className="mt-4 h-[2px]  w-full bg-[#DADDE7]"></div>
+                        <div className="mt-6 flex w-full flex-row items-center justify-end gap-6">
+                            <FbIcon className="h-8 w-8 cursor-pointer" />
+                            <InstaIcon className="h-8 w-8 cursor-pointer" />
+                            <WhatsappIcon className="h-8 w-8 cursor-pointer" />
+                        </div>
                     </div>
                 </div>
-                <SheetFooter>
-                    <SheetClose asChild>
-                        <Button type="submit">Save changes</Button>
-                    </SheetClose>
-                </SheetFooter>
             </SheetContent>
         </Sheet>
     )
