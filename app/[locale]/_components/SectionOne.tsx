@@ -1,63 +1,63 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 'use client'
 
-// import { motion } from 'framer-motion'
-// import { useTranslation } from 'react-i18next'
+import { motion } from 'framer-motion'
+import { useTranslation } from 'react-i18next'
 
 export default function SectionOne() {
-    // const { t } = useTranslation()
-    // const textAnimation = {
-    //     hidden: { opacity: 0 },
-    //     visible: (i: any) => ({
-    //         opacity: 1,
-    //         transition: {
-    //             delay: i * 0.05, // Made the animation faster
-    //         },
-    //     }),
-    // }
+    const { t } = useTranslation()
+    const textAnimation = {
+        hidden: { opacity: 0 },
+        visible: (i: any) => ({
+            opacity: 1,
+            transition: {
+                delay: i * 0.05, // Made the animation faster
+            },
+        }),
+    }
 
-    // const delayedTextAnimation = {
-    //     hidden: { opacity: 0 },
-    //     visible: (i: any) => ({
-    //         opacity: 1,
-    //         transition: {
-    //             delay: i * 0.05 + 0.4, // Added a 2 second delay
-    //         },
-    //     }),
-    // }
+    const delayedTextAnimation = {
+        hidden: { opacity: 0 },
+        visible: (i: any) => ({
+            opacity: 1,
+            transition: {
+                delay: i * 0.05 + 0.4, // Added a 2 second delay
+            },
+        }),
+    }
 
-    // const title = t('chateau')
-    //     .split('')
-    //     .map((char: any, i: any) => (
-    //         <motion.span
-    //             key={i}
-    //             variants={textAnimation}
-    //             custom={i}
-    //             initial="hidden"
-    //             animate="visible"
-    //         >
-    //             {char}
-    //         </motion.span>
-    //     ))
+    const title = t('chateau')
+        .split('')
+        .map((char: any, i: any) => (
+            <motion.span
+                key={i}
+                variants={textAnimation}
+                custom={i}
+                initial="hidden"
+                animate="visible"
+            >
+                {char}
+            </motion.span>
+        ))
 
-    // const subtitle = 'Best place to enjoy'.split('').map((char, i) => (
-    //     <motion.span
-    //         key={i}
-    //         variants={delayedTextAnimation}
-    //         custom={i}
-    //         initial="hidden"
-    //         animate="visible"
-    //     >
-    //         {char}
-    //     </motion.span>
-    // ))
+    const subtitle = 'Best place to enjoy'.split('').map((char, i) => (
+        <motion.span
+            key={i}
+            variants={delayedTextAnimation}
+            custom={i}
+            initial="hidden"
+            animate="visible"
+        >
+            {char}
+        </motion.span>
+    ))
 
     return (
-        <section className="bg-mainBgMob flex min-h-screen w-full flex-col    bg-contain bg-no-repeat px-20 md:bg-mainBg md:bg-cover ">
-            {/* <div className="left-0 mt-[400px] text-[72px] font-semibold tracking-wider  text-white ">
+        <section className="mt-[72px] flex min-h-screen  w-full flex-col items-center bg-mainBgMobile bg-cover bg-center bg-no-repeat px-20 md:xl:mt-24 md:bg-mainBg md:bg-cover ">
+            <div className="left-0 mt-[400px] text-[72px] font-semibold tracking-wider ">
                 {title}
                 <div className="font-bg ml-10 mt-[4px] text-[16px]">{subtitle}</div>
-            </div> */}
+            </div>
         </section>
     )
 }

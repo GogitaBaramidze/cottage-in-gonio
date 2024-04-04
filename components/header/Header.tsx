@@ -9,10 +9,10 @@ export default function Header() {
     const { t } = useTranslation()
     return (
         <main
-            className="flex w-full flex-row items-center justify-between px-5 py-2 transition-all md:px-7 md:py-3 xl:px-10 xl:py-3"
+            className="fixed flex w-full flex-row items-center justify-between px-5 py-2 transition-all md:px-7 md:py-3 xl:px-10 xl:py-3"
             style={{
-                backdropFilter: 'blur(40px)',
-                backgroundColor: 'hsla(0, 30.131004366812224%, 55.09803921568628%, 0.088)', // Add a semi-transparent background color to ensure the blur effect is visible
+                backdropFilter: 'blur(5px) saturate(150%)',
+                backgroundColor: 'rgba(0, 97, 11, 0.65)',
             }}
         >
             <div className="relative h-16 w-20 md:h-16 md:w-20 xl:h-20 xl:w-24">
@@ -23,7 +23,7 @@ export default function Header() {
                     className=" absolute cursor-pointer"
                 />
             </div>
-            <div className="hidden flex-row items-center font-normal  text-white  md:flex md:text-base  xl:text-xl">
+            <div className="hidden flex-row items-center font-normal  text-white  md:flex md:text-base xl:text-[18px]">
                 <Link href="/">
                     <span className="cursor-pointer  underline-offset-8 hover:underline   md:ml-7">
                         {t('main')}

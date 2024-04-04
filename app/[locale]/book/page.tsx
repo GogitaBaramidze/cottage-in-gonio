@@ -1,10 +1,11 @@
 import React from 'react'
-import SectionTwo from '../_components/SectionTwo'
+import SectionOne from '../_components/SectionOne'
 
 export default function page() {
     return (
-        <div>
-            <SectionTwo />
+        <div className="flex min-h-screen w-full flex-col  pt-[1px]">
+            <div className="mt-24 min-h-screen w-full bg-vine"></div>
+            <SectionOne />
         </div>
     )
 }

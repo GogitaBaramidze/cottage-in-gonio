@@ -1,7 +1,6 @@
 import TranslationsProvider from '@/providers/TranslationsProvider'
 import initTranslations from '../../utils/i18n'
 import { Noto_Sans_Georgian } from 'next/font/google'
-
 import { ReactNode } from 'react'
 import { dir } from 'i18next'
 import './globals.css'
