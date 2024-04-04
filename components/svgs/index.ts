@@ -1,5 +1,5 @@
-export { default as BankIcon } from '../../public/svg/bankIcon.svg'
-export { default as BurgerIcon } from '../../public/svg/burgerMenuIcon.svg'
+
+export { default as BurgerIcon } from '../../public/svg/burgerMenu.svg'
 export { default as Vine } from '../../public/svg/vine.svg'
 export { default as VineLeft } from '../../public/svg/vineLeft.svg'
 export { default as PhoneIcon } from '../../public/svg/phoneIcon.svg'
