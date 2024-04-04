@@ -25,8 +25,8 @@ const config = {
             backgroundImage: {
                 mainBg: "url('/images/mainBg.jpg')",
                 mainBgMobile: "url('/images/mainBgMobile.jpg')",
+                mainBgMob: "url('/images/mainBgMob.png')",
                 vine: "url('/images/vine.jpg')",
-              
             },
 
             colors: {

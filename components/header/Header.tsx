@@ -9,11 +9,11 @@ export default function Header() {
     const { t } = useTranslation()
     return (
         <main
-            className="absolute flex w-full flex-row items-center justify-between bg-[#958f1e203] px-5 py-2 transition-all md:px-7 md:py-3 xl:px-10 xl:py-3"
-            // style={{
-            //     backdropFilter: 'blur(10px) saturate(150%)',
-            //     backgroundColor: 'rgba(128, 0, 128, 0.3)', // Deep wine color with 30% opacity
-            // }}
+            className="flex w-full flex-row items-center justify-between px-5 py-2 transition-all md:px-7 md:py-3 xl:px-10 xl:py-3"
+            style={{
+                backdropFilter: 'blur(40px)',
+                backgroundColor: 'hsla(0, 30.131004366812224%, 55.09803921568628%, 0.088)', // Add a semi-transparent background color to ensure the blur effect is visible
+            }}
         >
             <div className="relative h-16 w-20 md:h-16 md:w-20 xl:h-20 xl:w-24">
                 <Image

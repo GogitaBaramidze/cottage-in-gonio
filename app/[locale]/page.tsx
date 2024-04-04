@@ -4,7 +4,7 @@ import SectionOne from './_components/SectionOne'
 
 async function Home() {
     return (
-        <main className=" flex min-h-screen w-full flex-col">
+        <main className=" flex min-h-screen w-full flex-col  pt-[1px]">
             <SectionOne />
             {/* <SectionTwo /> */}
         </main>

@@ -53,11 +53,11 @@ export default function SectionOne() {
     ))
 
     return (
-        <section className="flex min-h-screen w-full flex-col  bg-mainBgMobile bg-cover bg-no-repeat px-20 md:bg-mainBg md:bg-cover">
-            <div className="left-0 mt-[400px] text-[72px] font-semibold tracking-wider  text-white ">
+        <section className="bg-mainBgMob flex min-h-screen w-full flex-col    bg-contain bg-no-repeat px-20 md:bg-mainBg md:bg-cover ">
+            {/* <div className="left-0 mt-[400px] text-[72px] font-semibold tracking-wider  text-white ">
                 {title}
-                <div className="ml-10 mt-[4px] text-[16px] font-bg">{subtitle}</div>
-            </div>
+                <div className="font-bg ml-10 mt-[4px] text-[16px]">{subtitle}</div>
+            </div> */}
         </section>
     )
 }
