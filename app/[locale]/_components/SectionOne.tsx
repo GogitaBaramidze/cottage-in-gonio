@@ -73,7 +73,7 @@ export default function SectionOne() {
         },
     }
     return (
-        <section className="mt-[72px] flex min-h-screen w-full  flex-col items-center bg-mainBgMobile bg-cover bg-center bg-no-repeat  text-white md:bg-mainBg md:bg-cover md:xl:mt-24 ">
+        <section className="flex min-h-screen w-full  flex-col items-center bg-mainBgMobile bg-contain bg-top bg-no-repeat text-white  shadow-xl md:bg-mainBg  md:bg-cover ">
             <span className="mt-24 text-4xl font-semibold tracking-wider md:mt-[400px] md:text-[72px]">
                 {title}
             </span>

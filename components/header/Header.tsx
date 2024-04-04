@@ -9,10 +9,11 @@ export default function Header() {
     const { t } = useTranslation()
     return (
         <main
-            className="fixed flex w-full flex-row items-center justify-between px-5 py-2 transition-all md:px-7 md:py-3 xl:px-10 xl:py-3"
+            className=" flex w-full flex-row items-center justify-between px-5 py-2 transition-all md:px-7 md:py-3 xl:px-10 xl:py-3"
             style={{
                 backdropFilter: 'blur(10px) saturate(150%)',
-                backgroundColor: 'rgba(199, 153, 94, 0.7)',
+                background:
+                    'linear-gradient(to bottom, rgba(169, 130, 80, 1), rgba(199, 153, 94, 0.7), rgba(169, 130, 80, 0.5))',
             }}
         >
             <div className="relative h-16 w-20 md:h-16 md:w-20 xl:h-20 xl:w-24">
