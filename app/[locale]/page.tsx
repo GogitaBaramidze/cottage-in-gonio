@@ -4,11 +4,21 @@ import SectionOne from './_components/SectionOne'
 
 async function Home() {
     return (
-        <main className="flex min-h-screen w-full flex-col  pt-[1px]">
+        <main className="flex min-h-screen w-full flex-col  ">
             <SectionOne />
             <h1>Hello</h1>
-            <SectionOne />
-            <SectionOne />
+            <h1>Hello</h1>
+            <h1>Hello</h1>
+            <h1>Hello</h1>
+            <h1>Hello</h1>
+            <h1>Hello</h1>
+            <h1>Hello</h1>
+            <h1>Hello</h1>
+            <h1>Hello</h1>
+            <h1>Hello</h1>
+            <h1>Hello</h1>
+            <h1>Hello</h1>
+            <h1>Hello</h1>
         </main>
     )
 }

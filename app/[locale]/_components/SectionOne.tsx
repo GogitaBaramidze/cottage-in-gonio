@@ -11,7 +11,7 @@ export default function SectionOne() {
         visible: (i: any) => ({
             opacity: 1,
             transition: {
-                delay: i * 0.05, // Made the animation faster
+                delay: i * 0.1, // Made the animation faster
             },
         }),
     }
@@ -21,7 +21,7 @@ export default function SectionOne() {
         visible: (i: any) => ({
             opacity: 1,
             transition: {
-                delay: i * 0.05 + 0.4, // Added a 2 second delay
+                delay: i * 0.1 + 0.4, // Added a 2 second delay
             },
         }),
     }
@@ -40,24 +40,54 @@ export default function SectionOne() {
             </motion.span>
         ))
 
-    const subtitle = 'Best place to enjoy'.split('').map((char, i) => (
-        <motion.span
-            key={i}
-            variants={delayedTextAnimation}
-            custom={i}
-            initial="hidden"
-            animate="visible"
-        >
-            {char}
-        </motion.span>
-    ))
-
+    const subtitle = t('enjoy')
+        .split('')
+        .map((char, i) => (
+            <motion.span
+                key={i}
+                variants={delayedTextAnimation}
+                custom={i}
+                initial="hidden"
+                animate="visible"
+            >
+                {char}
+            </motion.span>
+        ))
+    const buttonVariants = {
+        hidden: { y: 100, scale: 0 },
+        visible: {
+            y: 0,
+            scale: 1,
+            transition: {
+                type: 'spring',
+                stiffness: 120,
+                damping: 20,
+            },
+        },
+        hover: {
+            scale: [1, 1.1, 1, 1.1, 1],
+            transition: {
+                duration: 0.8,
+                repeat: Infinity,
+            },
+        },
+    }
     return (
-        <section className="mt-[72px] flex min-h-screen  w-full flex-col items-center bg-mainBgMobile bg-cover bg-center bg-no-repeat px-20 md:xl:mt-24 md:bg-mainBg md:bg-cover ">
-            <div className="left-0 mt-[400px] text-[72px] font-semibold tracking-wider ">
+        <section className="mt-[72px] flex min-h-screen w-full  flex-col items-center bg-mainBgMobile bg-cover bg-center bg-no-repeat  text-white md:bg-mainBg md:bg-cover md:xl:mt-24 ">
+            <span className="mt-24 text-4xl font-semibold tracking-wider md:mt-[400px] md:text-[72px]">
                 {title}
-                <div className="font-bg ml-10 mt-[4px] text-[16px]">{subtitle}</div>
-            </div>
+            </span>
+            <span className="text-3xl">{subtitle}</span>
+
+            <motion.button
+                className="rounded-lg bg-[#c7995e99] p-10 text-4xl hover:bg-[#00610bcc]"
+                variants={buttonVariants}
+                initial="hidden"
+                animate="visible"
+                whileHover="hover"
+            >
+                Book Now !
+            </motion.button>
         </section>
     )
 }
