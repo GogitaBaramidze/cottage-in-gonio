@@ -7,3 +7,4 @@ export { default as EmailIcon } from '../../public/svg/mailIcon.svg'
 export { default as FbIcon } from '../../public/svg/fbIcon.svg'
 export { default as InstaIcon } from '../../public/svg/instIcon.svg'
 export { default as WhatsappIcon } from '../../public/svg/whatsappIcon.svg'
+// "qegqegqe"
