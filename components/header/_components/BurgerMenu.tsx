@@ -1,8 +1,8 @@
 import { Sheet, SheetClose, SheetContent, SheetTrigger } from '@/components/ui/sheet'
-import { BurgerIcon, EmailIcon, FbIcon, InstaIcon, WhatsappIcon } from '../svgs'
+import { BurgerIcon, EmailIcon, FbIcon, InstaIcon, WhatsappIcon } from '../../svgs'
 import { useTranslation } from 'react-i18next'
 import { useRouter } from 'next/navigation'
-import { PhoneIcon } from '../svgs'
+import { PhoneIcon } from '../../svgs'
 
 export function BurgerMenu() {
     const { t } = useTranslation()

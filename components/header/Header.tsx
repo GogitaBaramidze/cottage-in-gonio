@@ -3,7 +3,8 @@ import Image from 'next/image'
 import Logo from '../../public/images/logo.png'
 import { useTranslation } from 'react-i18next'
 import Link from 'next/link'
-import { BurgerMenu } from './BurgerMenu'
+import { BurgerMenu } from './_components/BurgerMenu'
+import LangChoose from './_components/LangChoose'
 
 export default function Header() {
     const { t } = useTranslation()
@@ -39,6 +40,7 @@ export default function Header() {
                 <span className="cursor-pointer underline-offset-8 hover:underline  md:ml-7">
                     {t('about')}
                 </span>
+                <LangChoose className={''} spanClassname={''} />
             </div>
 
             <BurgerMenu />
