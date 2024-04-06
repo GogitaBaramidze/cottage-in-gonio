@@ -11,7 +11,6 @@ const config = {
     prefix: '',
     theme: {
         fontFamily: {
-            firaGo: ['firaGo', 'sans-serif'],
             bgCaps: ['bgCaps', 'sans-serif'],
         },
         container: {
