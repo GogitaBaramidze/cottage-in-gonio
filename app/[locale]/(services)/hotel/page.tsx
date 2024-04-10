@@ -3,6 +3,7 @@
 import Image from 'next/image'
 import Bath1 from '../../../../public/hotelImages/bathDeluxe/img1.webp'
 import Bath2 from '../../../../public/hotelImages/bathDeluxe/img2.webp'
+import Bath4 from '../../../../public/hotelImages/bathDeluxe/img4.webp'
 import King1 from '../../../../public/hotelImages/kingRoom/img1.jpg'
 import King2 from '../../../../public/hotelImages/kingRoom/img2.jpg'
 import King3 from '../../../../public/hotelImages/kingRoom/img3.jpg'
@@ -45,7 +46,7 @@ const data = [
                 lado: '2',
             },
             {
-                image: Bath1,
+                image: Bath4,
                 lado: '13333',
             },
             {
