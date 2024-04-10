@@ -1,5 +1,12 @@
+'use client'
+
 import Image from 'next/image'
-import King from '../../../../public/hotelImages/king.webp'
+import Bath1 from '../../../../public/hotelImages/bathDeluxe/img1.webp'
+import Bath2 from '../../../../public/hotelImages/bathDeluxe/img2.webp'
+import King1 from '../../../../public/hotelImages/kingRoom/img1.jpg'
+import King2 from '../../../../public/hotelImages/kingRoom/img2.jpg'
+import King3 from '../../../../public/hotelImages/kingRoom/img3.jpg'
+import King4 from '../../../../public/hotelImages/kingRoom/img4.jpg'
 
 import {
     Sqm,
@@ -16,13 +23,64 @@ import {
     Minibar,
     Wifi,
 } from '@/components/svgs'
+import {
+    Carousel,
+    CarouselContent,
+    CarouselItem,
+    CarouselNext,
+    CarouselPrevious,
+} from '@/components/ui/carousel'
+import { Card, CardContent } from '@/components/ui/card'
+import Autoplay from 'embla-carousel-autoplay'
+
+const data = [
+    {
+        bathDeluxe: [
+            {
+                image: Bath1,
+                lado: '1',
+            },
+            {
+                image: Bath2,
+                lado: '2',
+            },
+            {
+                image: Bath1,
+                lado: '13333',
+            },
+            {
+                image: Bath1,
+                lado: '13333',
+            },
+        ],
+        kingRoom: [
+            {
+                image: King1,
+                lado: '1',
+            },
+            {
+                image: King2,
+                lado: '2',
+            },
+            {
+                image: King3,
+                lado: '13333',
+            },
+            {
+                image: King4,
+                lado: '13333',
+            },
+        ],
+    },
+]
 
 export default function page() {
     return (
-        <main className="flex min-h-screen w-full flex-col  items-center  ">
+        <main className="flex min-h-screen w-full flex-col  items-center pt-28  ">
             <h1 className="text-xl">Rooms & suits</h1>
             <div className="flex-wrap-nowrap mt-10  grid w-full grid-cols-2 grid-rows-2 flex-row  justify-between gap-10 bg-[#D9D9D9] p-10 px-20">
                 <div className=" flex h-full w-full flex-col justify-center ">
+                    <h1 className="text-3xl font-bold text-black">Deluxe suite with bath</h1>
                     <div className="flex w-full flex-row items-center">
                         <KingBed className="h-10 w-10 fill-[#9392a0]" />
                         <span className="ml-1">One large double bed</span>
@@ -94,12 +152,66 @@ export default function page() {
                         </span>
                     </div>
                 </div>
-                <div className="bg-white p-6">
-                    <Image src={King} className="h-full max-w-full " alt="123" />
+                <div className="bg-white ">
+                    <Carousel
+                        plugins={[
+                            Autoplay({
+                                delay: 4000,
+                            }),
+                        ]}
+                    >
+                        <CarouselContent className="">
+                            {data[0].bathDeluxe?.map((item, index) => (
+                                <CarouselItem key={index}>
+                                    <div className="p-1">
+                                        <Card>
+                                            <CardContent className="relative flex h-full w-full items-center justify-center overflow-hidden p-0 ">
+                                                <Image
+                                                    src={item.image}
+                                                    className="h-full w-full object-cover"
+                                                    alt="123"
+                                                />
+                                            </CardContent>
+                                        </Card>
+                                    </div>
+                                </CarouselItem>
+                            ))}
+                        </CarouselContent>
+
+                        <CarouselPrevious />
+                        <CarouselNext />
+                    </Carousel>
                 </div>
 
-                <div className="bg-white p-6">
-                    <Image src={King} className="h-full max-w-full " alt="123" />
+                <div className="bg-white ">
+                    <Carousel
+                        plugins={[
+                            Autoplay({
+                                delay: 4000,
+                            }),
+                        ]}
+                    >
+                        <CarouselContent className="">
+                            {data[0].kingRoom?.map((item, index) => (
+                                <CarouselItem key={index}>
+                                    <div className="p-1">
+                                        <Card>
+                                            <CardContent className="relative flex h-full w-full items-center justify-center overflow-hidden p-0 ">
+                                                <Image
+                                                    src={item.image}
+                                                    className="h-full w-full object-cover"
+                                                    alt="123"
+                                                />
+                                            </CardContent>
+                                        </Card>
+                                    </div>
+                                </CarouselItem>
+                            ))}
+                        </CarouselContent>
+
+                        <CarouselPrevious />
+                        <CarouselNext />
+                    </Carousel>
                 </div>
                 <div className=" flex h-full w-full flex-col  justify-center ">
                     <div className="flex w-full flex-row items-center">
@@ -246,7 +358,7 @@ export default function page() {
                     </div>
                 </div>
                 <div className="bg-white p-6">
-                    <Image src={King} className="h-full max-w-full " alt="123" />
+                    <Image src={Bath1} className="h-full max-w-full " alt="123" />
                 </div>
             </div>
         </main>

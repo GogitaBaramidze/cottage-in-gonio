@@ -17,16 +17,14 @@ export default function Header() {
         <main
             className={` flex w-full flex-row items-center justify-between px-5 py-2 transition-all md:px-7 md:py-3 xl:px-10 xl:py-3 ${isRootRoute ? 'absolute' : 'flex'}`}
             style={
-                isRootRoute
+                !isRootRoute
                     ? {
                           backdropFilter: 'blur(10px) saturate(150%)',
                           backgroundColor: 'rgba(255, 255, 255, 0.3)',
                           position: 'absolute',
                       }
                     : {
-                          backdropFilter: 'blur(10px) saturate(150%)',
-                          background:
-                              'linear-gradient(to bottom, rgba(169, 130, 80, 1), rgba(199, 153, 94, 0.7), rgba(169, 130, 80, 0.5))',
+                          background: 'white,',
                       }
             }
         >
@@ -38,7 +36,7 @@ export default function Header() {
                     className=" absolute cursor-pointer"
                 />
             </div>
-            <div className="hidden flex-row items-center font-normal  text-white  md:flex md:text-base xl:text-[18px]">
+            <div className="hidden flex-row items-center font-normal  text-black  md:flex md:text-base xl:text-[18px]">
                 <Link href="/">
                     <span className="cursor-pointer  underline-offset-8 hover:underline   md:ml-7">
                         {t('main')}
