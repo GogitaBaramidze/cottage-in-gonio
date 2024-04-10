@@ -26,6 +26,7 @@ const config = {
                 mainBgMobile: "url('/images/mainBgMobile.jpg')",
                 headerBg: "url('/images/headerBg.jpg')",
                 vine: "url('/images/vine.jpg')",
+                
             },
 
             colors: {
