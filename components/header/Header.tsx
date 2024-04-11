@@ -15,16 +15,16 @@ export default function Header() {
 
     return (
         <main
-            className={` flex w-full flex-row items-center justify-between px-5 py-2 transition-all md:px-7 md:py-3 xl:px-10 xl:py-3 ${isRootRoute ? 'absolute' : 'flex'}`}
+            className={` flex w-full flex-row items-center justify-between px-5 shadow-md py-2 transition-all md:px-7 md:py-3 xl:px-10 xl:py-3 ${isRootRoute ? 'absolute' : 'flex'}`}
             style={
-                !isRootRoute
+                isRootRoute
                     ? {
                           backdropFilter: 'blur(10px) saturate(150%)',
                           backgroundColor: 'rgba(255, 255, 255, 0.3)',
                           position: 'absolute',
                       }
                     : {
-                          background: 'white,',
+                          backgroundColor: '#FFFFFF,',
                       }
             }
         >

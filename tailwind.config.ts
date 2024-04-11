@@ -12,6 +12,8 @@ const config = {
     theme: {
         fontFamily: {
             bgCaps: ['bgCaps', 'sans-serif'],
+            georgian: 'var(--noto-sans-georgian)',
+            italian: 'var(--italiana)',
         },
         container: {
             center: true,
@@ -26,7 +28,6 @@ const config = {
                 mainBgMobile: "url('/images/mainBgMobile.jpg')",
                 headerBg: "url('/images/headerBg.jpg')",
                 vine: "url('/images/vine.jpg')",
-                
             },
 
             colors: {
