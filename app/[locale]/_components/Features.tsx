@@ -49,7 +49,7 @@ export default function Features() {
                     whileInView="visible"
                     className="flex min-h-screen w-full flex-row items-center gap-10 px-20 py-10"
                 >
-                    {/* <div className="flex w-[600px] flex-col">
+                    <div className="flex w-[600px] flex-col">
                         <p>
                             qegkpqeigjqgjqeipgqeipgqeigqeipjgqipejgqijgqejpjipgeqijqgeijpgqjiqgejiqegjpiqjpiqjpg
                         </p>
@@ -119,8 +119,7 @@ export default function Features() {
                                 <span className="ml-1 text-white">+ event</span>
                             </motion.div>
                         </div>
-                    </div> */}
-
+                    </div>
                     <motion.div variants={imageAnimation} custom={1} className="">
                         <Image src={Building} className="h-full max-w-full" alt="building" />
                     </motion.div>
@@ -134,10 +133,6 @@ export default function Features() {
                     <motion.div variants={imageAnimation} custom={4}>
                         <Image src={Building} className="h-full max-w-full" alt="building" />
                     </motion.div>
-                    <video width="320" height="240" controls>
-                        <source src="./Bath.mp4" type="video/mp4" />
-                        Your browser does not support the video tag.
-                    </video>
                 </motion.section>
             </ScrollTriggerComponent>
         </>
