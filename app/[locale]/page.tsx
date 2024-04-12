@@ -3,6 +3,11 @@
 import Features from './_components/Features'
 import SectionOne from './_components/SectionOne'
 import Services from './_components/Services'
+// import Wine from './_components/Wine'
+
+import dynamic from 'next/dynamic'
+
+const Wine = dynamic(() => import('./_components/Wine'), { ssr: false })
 
 async function Home() {
     return (
@@ -10,7 +15,9 @@ async function Home() {
             <SectionOne />
             <Services />
             <Features />
+
             <SectionOne />
+            <Wine />
             <SectionOne />
         </main>
     )
