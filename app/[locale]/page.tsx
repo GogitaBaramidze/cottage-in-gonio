@@ -10,6 +10,8 @@ async function Home() {
             <SectionOne />
             <Services />
             <Features />
+            <SectionOne />
+            <SectionOne />
         </main>
     )
 }

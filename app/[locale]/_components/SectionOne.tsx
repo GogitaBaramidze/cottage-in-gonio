@@ -7,11 +7,13 @@ import { useTranslation } from 'react-i18next'
 export default function SectionOne() {
     const { t } = useTranslation()
     const textAnimation = {
-        hidden: { opacity: 0 },
+        hidden: { opacity: 0, x: -100 },
         visible: (i: any) => ({
             opacity: 1,
+            x: 0,
             transition: {
-                delay: i * 0.1, // Made the animation faster
+                delay: i,
+                ease: 'easeIn',
             },
         }),
     }
@@ -21,7 +23,7 @@ export default function SectionOne() {
         visible: (i: any) => ({
             opacity: 1,
             transition: {
-                delay: i * 0.1 + 0.4, // Added a 2 second delay
+                delay: i * 0.03, // Added a 2 second delay
             },
         }),
     }
