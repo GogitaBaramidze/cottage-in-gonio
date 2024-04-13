@@ -15,6 +15,7 @@ async function Home() {
             {/* <Services /> */}
             {/* <Features /> */}
             <Wine />
+           
         </main>
     )
 }
