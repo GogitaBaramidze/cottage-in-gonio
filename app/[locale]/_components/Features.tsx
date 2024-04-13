@@ -1,8 +1,6 @@
-/* eslint-disable @typescript-eslint/no-explicit-any */
 'use client'
 
 import ScrollTrigger from 'react-scroll-trigger'
-
 import { motion } from 'framer-motion'
 import { useState } from 'react'
 import CountUp from 'react-countup'

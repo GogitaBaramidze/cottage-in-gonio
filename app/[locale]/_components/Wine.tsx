@@ -26,6 +26,18 @@ export default function Wine() {
             transition: { delay: custom * 0.1 },
         }),
     }
+    const img = {
+        hidden: {
+            y: 0,
+            opacity: 0,
+        },
+        visible: (custom: any) => ({
+            y: 0,
+            opacity: 1,
+            scale: 1,
+            transition: { delay: custom * 0.1 },
+        }),
+    }
 
     return (
         <section className="grid h-full w-full grid-cols-1 items-start justify-center gap-6 bg-teal-950 px-5 py-5 md:grid-cols-3 md:items-center  md:gap-10 md:px-7  md:py-0 xl:px-10">
@@ -53,7 +65,7 @@ export default function Wine() {
                         Lorem Ipsum is simply dummy text of the printing and typesetting industry.
                         1500s, when an unknown printer.
                     </motion.p>
-                    <motion.div variants={textAnimation} custom={3} className="rounded-md">
+                    <motion.div variants={img} custom={3} className="rounded-md">
                         <Image
                             src={Cheers}
                             alt="bottle"
@@ -88,11 +100,7 @@ export default function Wine() {
                         1500s, when an unknown printer took a galley of type and scrambled it to
                         make a type specimen book.
                     </motion.p>
-                    <motion.div
-                        variants={textAnimation}
-                        custom={1}
-                        className="rounded-md  md:order-1"
-                    >
+                    <motion.div variants={img} custom={2} className="rounded-md  md:order-1">
                         <Image
                             src={WineSort}
                             alt="bottle"
