@@ -13,7 +13,7 @@ import Link from 'next/link'
 export default function Services() {
     return (
         <>
-            <main className=" mt-10  hidden h-[1100px] w-full flex-col items-center gap-4 bg-[#D9D9D9] px-7     py-20 md:flex xl:h-[760px] xl:flex-row xl:gap-10 xl:px-20">
+            <main className=" mt-10  hidden h-[1100px] w-full flex-col items-center gap-4 bg-white px-7     py-20 md:flex xl:h-[760px] xl:flex-row xl:gap-10 xl:px-20">
                 <div className="order-1  grid h-1/3    w-1/2 grid-rows-1 xl:order-none xl:h-full xl:w-full">
                     <motion.div
                         whileHover={{ scale: 1.05 }}
