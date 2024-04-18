@@ -1,7 +1,7 @@
 'use server'
 
 import Gallery from './_components/Gallery'
-import PanoramicView from './_components/Gallery'
+
 // import Features from './_components/Features'
 import SectionOne from './_components/SectionOne'
 import Services from './_components/Services'
