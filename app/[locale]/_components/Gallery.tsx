@@ -16,7 +16,7 @@ import { Card, CardContent } from '@/components/ui/card'
 import { InstagramGold } from '@/components/svgs'
 import Link from 'next/link'
 
-export default function PanoramicView() {
+export default function Gallery() {
     const data = [
         {
             img: Bath1,
@@ -70,14 +70,14 @@ export default function PanoramicView() {
                         target="_blank"
                         className=" flex cursor-pointer flex-row items-center hover:text-[#a28964]"
                     >
-                        <InstagramGold className=" h-10 w-10" />
+                        <InstagramGold className="h-10 w-10" />
                         <p>chateau.iveri</p>
                     </Link>
                     <div className="ml-2 h-[0.5px] w-full bg-[#484848]"></div>
                 </div>
             </div>
             <Carousel setApi={setApi} className="h-full w-full ">
-                <CarouselContent className="pr-20 md:pr-0">
+                <CarouselContent className="pr-16 md:pr-0">
                     {data.map((item, index) => (
                         <CarouselItem
                             key={index}
@@ -89,10 +89,10 @@ export default function PanoramicView() {
                         >
                             <div className="pl-0 md:pb-32 ">
                                 <Card>
-                                    <CardContent className="z-40 flex items-center justify-center p-0 ">
+                                    <CardContent className="z-40 flex    w-full items-center justify-center p-0 ">
                                         <Image
                                             src={item.img}
-                                            className="h-full w-full  rounded-sm shadow-slate-100  "
+                                            className="h-full w-full   rounded-sm shadow-slate-100 cursor-pointer  "
                                             alt="123"
                                         />
                                     </CardContent>
