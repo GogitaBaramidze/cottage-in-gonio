@@ -12,6 +12,9 @@ const config = {
     theme: {
         fontFamily: {
             bgCaps: ['bgCaps', 'sans-serif'],
+            moderline: ['Moderline', 'cursive'],
+            moderlineTail: ['Moderline-tail', 'cursive'],
+            canela: ['Canela', 'sans-serif'],
             georgian: 'var(--noto-sans-georgian)',
             italian: 'var(--italiana)',
         },

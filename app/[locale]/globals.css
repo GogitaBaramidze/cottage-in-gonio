@@ -104,3 +104,18 @@ body {
             format('svg'); /* Legacy iOS */
 }
 
+@font-face {
+    font-family: 'Moderline';
+    src: url('../../public/fonts/modernline.otf'); /* IE9 Compat Modes */
+}
+
+@font-face {
+    font-family: 'Moderline-tail';
+    src: url('../../public/fonts/moderline-tail.otf'); /* IE9 Compat Modes */
+}
+
+@font-face {
+    font-family: 'Canela';
+    src: url('../../public/fonts/CanelaText-RegularItalic-Trial.otf');
+    src: url('../../public/fonts/CanelaText-ThinItalic-Trial.otf'); /* IE9 Compat Modes */
+}
