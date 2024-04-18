@@ -1,7 +1,7 @@
 import { Config } from 'next-i18n-router/dist/types'
 
 const i18nConfig: Config = {
-    locales: ['ka', 'en'],
+    locales: ['ka', 'eng'],
     defaultLocale: 'ka',
 }
 
