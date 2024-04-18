@@ -12,7 +12,7 @@ export default function SectionOne() {
             opacity: 1,
             x: 0,
             transition: {
-                delay: i,
+                delay: i * 0.03,
                 ease: 'easeIn',
             },
         }),
@@ -57,8 +57,8 @@ export default function SectionOne() {
         ))
 
     return (
-        <section className="mt-24 flex min-h-screen w-full flex-col items-center bg-mainBgMobile bg-contain bg-top bg-no-repeat text-white  shadow-xl md:bg-mainBg  md:bg-cover ">
-            <span className="mt-24 text-4xl font-semibold tracking-wider md:mt-[400px] md:text-[72px]">
+        <section className="  flex min-h-screen w-full flex-col items-center bg-mainBgMobile bg-contain bg-top bg-no-repeat text-white  shadow-xl md:bg-mainBg  md:bg-cover ">
+            <span className="mt-24 text-4xl  font-moderline tracking-wider md:mt-[400px] md:text-[72px]">
                 {title}
             </span>
             <span className="text-3xl">{subtitle}</span>

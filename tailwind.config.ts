@@ -28,6 +28,8 @@ const config = {
         extend: {
             backgroundImage: {
                 mainBg: "url('/images/mainBg.jpg')",
+                pageBg: "url('/images/bg-body.jpg')",
+                letterC: "url('/images/bg-letter-c.png')",
                 mainBgMobile: "url('/images/mainBgMobile.jpg')",
                 headerBg: "url('/images/headerBg.jpg')",
                 vine: "url('/images/vine.jpg')",

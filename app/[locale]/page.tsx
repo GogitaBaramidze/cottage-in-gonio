@@ -12,11 +12,12 @@ const Wine = dynamic(() => import('./_components/Wine'), { ssr: false })
 
 async function Home() {
     return (
-        <main className="flex min-h-screen w-full flex-col ">
+        <main className="bg-pageBg flex min-h-screen w-full flex-col ">
             <SectionOne />
             <Services />
-            <Gallery />
+
             <Wine />
+            <Gallery />
         </main>
     )
 }

@@ -56,8 +56,8 @@ export default function Gallery() {
     }
 
     return (
-        <section className="relative flex flex-col items-center justify-center px-5 py-10  md:px-6 md:py-24 lg:px-7 xl:px-10">
-            <div className="right-0 top-0 z-50 flex w-full flex-col items-center  md:absolute md:flex md:w-auto md:items-end">
+        <section className="relative bg-letterC bg-no-repeat bg-contain   bg-center flex flex-col items-center justify-center px-5 py-10  md:px-6 md:py-36 lg:px-7 xl:px-10">
+            <div className="right-0 top-0 z-50 flex w-full flex-col items-center  md:absolute md:flex md:w-auto md:items-end md:mt-10">
                 <p className="font-moderline text-6xl md:mr-6  lg:mr-7 lg:text-7xl xl:mr-36">
                     imagin<em className="font-moderlineTail">e</em>
                 </p>
@@ -76,7 +76,7 @@ export default function Gallery() {
                     <div className="ml-2 h-[0.5px] w-full bg-[#484848]"></div>
                 </div>
             </div>
-            <Carousel setApi={setApi} className="h-full w-full ">
+            <Carousel setApi={setApi} className="h-full w-full  z-20">
                 <CarouselContent className="pr-16 md:pr-0">
                     {data.map((item, index) => (
                         <CarouselItem
@@ -105,8 +105,8 @@ export default function Gallery() {
                 <CarouselPrevious className="hidden md:flex" />
                 <CarouselNext className="hidden md:flex" />
             </Carousel>
-            <div className="-z-10  mt-5 h-[0.5px] w-full bg-[#484848] md:absolute md:bottom-40"></div>
-            <button className="mt-5 snap-center  border border-[#484848] px-3 py-2 text-xl hover:bg-[#a28964] hover:text-white md:absolute md:bottom-24">
+            <div className="z-10  mt-5 h-[0.5px] w-full bg-[#484848] md:absolute md:bottom-52"></div>
+            <button className="mt-5 snap-center  border border-[#484848] px-3 py-2 text-xl hover:bg-[#a28964] hover:text-white md:absolute md:bottom-32">
                 View Our Gallery
             </button>
         </section>
