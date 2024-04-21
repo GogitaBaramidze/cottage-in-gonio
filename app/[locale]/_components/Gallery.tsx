@@ -56,12 +56,12 @@ export default function Gallery() {
     }
 
     return (
-        <section className="relative bg-letterC bg-no-repeat bg-contain   bg-center flex flex-col items-center justify-center px-5 py-10  md:px-6 md:py-36 lg:px-7 xl:px-10">
-            <div className="right-0 top-0 z-50 flex w-full flex-col items-center  md:absolute md:flex md:w-auto md:items-end md:mt-10">
+        <section className="relative flex flex-col items-center   justify-center bg-letterC bg-contain bg-center bg-no-repeat px-5 py-10  md:px-6 md:py-36 lg:px-7 xl:px-10">
+            <div className="right-0 top-0 z-50 flex w-full flex-col items-center  md:absolute md:mt-10 md:flex md:w-auto md:items-end">
                 <p className="font-moderline text-6xl md:mr-6  lg:mr-7 lg:text-7xl xl:mr-36">
                     imagin<em className="font-moderlineTail">e</em>
                 </p>
-                <p className="font-canela ml-28 text-4xl md:ml-0 md:mr-6  lg:mr-7 lg:mt-1 lg:text-5xl xl:mr-20 xl:mt-2">
+                <p className="ml-28 font-canela text-4xl md:ml-0 md:mr-6  lg:mr-7 lg:mt-1 lg:text-5xl xl:mr-20 xl:mt-2">
                     Yourself here
                 </p>
                 <div className="mb-5 mt-5 flex w-full flex-row items-center justify-start md:mb-0  md:w-4/5 ">
@@ -76,7 +76,7 @@ export default function Gallery() {
                     <div className="ml-2 h-[0.5px] w-full bg-[#484848]"></div>
                 </div>
             </div>
-            <Carousel setApi={setApi} className="h-full w-full  z-20">
+            <Carousel setApi={setApi} className="z-20 h-full  w-full">
                 <CarouselContent className="pr-16 md:pr-0">
                     {data.map((item, index) => (
                         <CarouselItem
@@ -92,7 +92,7 @@ export default function Gallery() {
                                     <CardContent className="z-40 flex    w-full items-center justify-center p-0 ">
                                         <Image
                                             src={item.img}
-                                            className="h-full w-full   rounded-sm shadow-slate-100 cursor-pointer  "
+                                            className="h-full w-full   cursor-pointer rounded-sm shadow-slate-100  "
                                             alt="123"
                                         />
                                     </CardContent>
@@ -106,7 +106,7 @@ export default function Gallery() {
                 <CarouselNext className="hidden md:flex" />
             </Carousel>
             <div className="z-10  mt-5 h-[0.5px] w-full bg-[#484848] md:absolute md:bottom-52"></div>
-            <button className="mt-5 snap-center  border border-[#484848] px-3 py-2 text-xl hover:bg-[#a28964] hover:text-white md:absolute md:bottom-32">
+            <button className="z-[100] mt-5  snap-center border border-[#484848] px-3 py-2 text-xl hover:bg-[#a28964] hover:text-white md:absolute md:bottom-32">
                 View Our Gallery
             </button>
         </section>
