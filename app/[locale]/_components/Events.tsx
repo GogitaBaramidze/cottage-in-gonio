@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import TestImage from '../../../public/images/weddingTest.jpg'
 import TestImage1 from '../../../public/images/weddingTest3.jpg'
-import TestImage2 from '../../../public/images/weddingTest4.jpg'
+
 import TestImage3 from '../../../public/images/weddingTest5.jpg'
 
 export default function Events() {
