@@ -40,7 +40,7 @@ export default function Wine() {
     }
 
     return (
-        <section className="grid h-full w-full grid-cols-1 items-start justify-center gap-6   bg-slate-700 px-5 py-5 md:grid-cols-3 md:items-center  md:gap-10 md:px-7  md:py-0 xl:px-10">
+        <section className="grid h-full w-full grid-cols-1 items-start justify-center gap-6 border-y-2 border-[484848] bg-[#a28964]  px-5 py-5 shadow-lg md:grid-cols-3 md:items-center  md:gap-10 md:px-7  md:py-0 xl:px-10">
             <ScrollTriggerComponent
                 onEnter={() => setVisible1(true)}
                 onExit={() => setVisible1(false)}
