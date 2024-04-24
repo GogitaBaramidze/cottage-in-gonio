@@ -40,7 +40,7 @@ export default function Wine() {
     }
 
     return (
-        <section className="grid h-full w-full grid-cols-1 items-start justify-center gap-6 border-y-2 border-[484848] bg-[#a28964]  px-5 py-5 shadow-lg md:grid-cols-3 md:items-center  md:gap-10 md:px-7  md:py-0 xl:px-10">
+        <section className="grid min-h-screen w-full grid-cols-1 items-start justify-center gap-6  bg-[#f1efeb]  py-5 shadow-lg md:grid-cols-3 md:items-center  md:gap-10 px-7  md:py-b xl:px-16">
             <ScrollTriggerComponent
                 onEnter={() => setVisible1(true)}
                 onExit={() => setVisible1(false)}
@@ -53,14 +53,14 @@ export default function Wine() {
                     <motion.h1
                         variants={textAnimation}
                         custom={1}
-                        className="mt-4 font-bgCaps text-xl text-white"
+                        className="mt-4 font-bgCaps text-xl text-[#111]"
                     >
                         ღვინის მოწრუპა
                     </motion.h1>
                     <motion.p
                         variants={textAnimation}
                         custom={2}
-                        className="mb-4 mt-4 rounded-md text-white"
+                        className="mb-4 mt-4 rounded-md text-[#111]"
                     >
                         Lorem Ipsum is simply dummy text of the printing and typesetting industry.
                         1500s, when an unknown printer.
@@ -69,7 +69,7 @@ export default function Wine() {
                         <Image
                             src={Cheers}
                             alt="bottle"
-                            className="h-auto w-full rounded-md border border-white"
+                            className="h-auto w-full rounded-md border border-[#484848] shadow-xl"
                         />
                     </motion.div>
                 </motion.div>
@@ -86,14 +86,14 @@ export default function Wine() {
                     <motion.h1
                         variants={textAnimation}
                         custom={1}
-                        className="mt-4 font-bgCaps text-white md:order-2"
+                        className="mt-4 font-bgCaps text-[#111] md:order-2"
                     >
                         გინდა პახმელიის გარეშე ?
                     </motion.h1>
                     <motion.p
                         variants={textAnimation}
                         custom={2}
-                        className="mb-4 mt-4 text-white md:order-3"
+                        className="mb-4 mt-4 text-[#111] md:order-3"
                     >
                         Lorem Ipsum is simply dummy text of the printing and typesetting industry.
                         Lorem Ipsum has been the industry s standard dummy text ever since the
@@ -104,7 +104,7 @@ export default function Wine() {
                         <Image
                             src={WineSort}
                             alt="bottle"
-                            className=" h-auto w-full rounded-md border border-white  "
+                            className=" h-auto w-full rounded-md border border-[#484848] shadow-xl  "
                         />
                     </motion.div>
                     <motion.div
@@ -116,7 +116,7 @@ export default function Wine() {
                     </motion.div>
                 </motion.div>
             </ScrollTriggerComponent>
-            <div className="hidden h-2/3 items-start justify-center overflow-hidden rounded-md  border border-white  md:flex">
+            <div className="hidden h-2/3 items-start justify-center overflow-hidden rounded-md  shadow-xl border border-[#484848]  md:flex">
                 <ReactPlayer
                     url="./Bath.mp4"
                     width="100%"

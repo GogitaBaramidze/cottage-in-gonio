@@ -33,7 +33,7 @@ export default function Events() {
     ]
 
     return (
-        <section className="order-y-2 flex min-h-screen w-full  flex-col border-[484848] bg-letterC bg-contain  bg-center bg-no-repeat  px-5  py-10 md:px-7 xl:px-10">
+        <section className="order-y-2 flex min-h-screen w-full  flex-col border-[484848] bg-letterC bg-contain  bg-center bg-no-repeat  px-7  py-16  xl:px-16">
             <div className="mb-10 flex h-auto w-full flex-col items-center">
                 <span className=" mr-32 md:mr-40 font-moderline text-5xl">
                     evenT<em className=" font-moderlineTail">s</em>
@@ -53,13 +53,13 @@ export default function Events() {
                                         <Image
                                             src={item.img}
                                             alt="123"
-                                            className="h-full w-full rounded-lg object-cover"
+                                            className="h-full w-full rounded-lg object-cover "
                                         />
                                         <div className="absolute bottom-0 left-0 flex h-full  w-full flex-col justify-end pb-10">
-                                            <span className="bg-black p-3 font-canela  text-3xl text-white opacity-70">
+                                            <span className="bg-black p-3 font-canela  text-3xl text-white opacity-60">
                                                 {item.header}
                                             </span>
-                                            <span className="bg-black p-3 font-canela text-base text-white opacity-70">
+                                            <span className="bg-black p-3 font-canela text-base text-white opacity-60">
                                                 {item.text}
                                             </span>
                                             <Button className="mx-5 mt-5">Start planing</Button>
