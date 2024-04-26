@@ -1,8 +1,8 @@
 'use client'
+
 import Image from 'next/image'
 import TestImage1 from '../../../public/images/weddingTest3.jpg'
 import Meeting from '../../../public/images/meeting.jpg'
-
 import TestImage3 from '../../../public/images/weddingTest5.jpg'
 import { Carousel, CarouselContent, CarouselItem } from '@/components/ui/carousel'
 import { Card, CardContent } from '@/components/ui/card'

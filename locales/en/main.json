@@ -1,8 +1,10 @@
 {
     "main": "Main",
     "tourism": "Tourism And Hospitality",
-    "chateau": "Chateau Iveri",
+
     "enjoy": "Best place to enjoy",
     "winery": "Winery",
-    "about": "About us"
+    "about": "About us",
+
+    "chateau": "Chateau Iveri"
 }

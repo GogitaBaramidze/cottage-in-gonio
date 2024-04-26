@@ -1,9 +1,10 @@
 'use client'
+
 import Image from 'next/image'
 import React, { useEffect, useState } from 'react'
-import Bath1 from '../../../public/hotelImages/bathDeluxe/img1.webp'
-import Bath2 from '../../../public/hotelImages/bathDeluxe/img2.webp'
-import Bath3 from '../../../public/hotelImages/bathDeluxe/img4.webp'
+import Bath1 from '../../../public/images/hotel/img1.webp'
+import Bath2 from '../../../public/images/hotel/img2.webp'
+import Bath3 from '../../../public/images/hotel/img4.webp'
 import {
     Carousel,
     CarouselContent,

@@ -13,7 +13,7 @@ body {
     min-height: 100vh;
     background-color: #f5f5f5;
     color: #484848;
- 
+
 }
 
 @layer base {
@@ -89,34 +89,19 @@ body {
     }
 }
 
-@font-face {
-    font-family: 'bgCaps';
-    src: url('../../public/fonts/bpg-web-002-caps-webfont.eot'); /* IE9 Compat Modes */
-
-    src:
-        url('../../public/fonts/bpg-web-002-caps-webfont.eot?#iefix') format('embedded-opentype'),
-        /* IE6-IE8 */ url('../../public/fonts/bpg-web-002-caps-webfont.woff2') format('woff2'),
-        /* Super Modern Browsers */ url('../../public/fonts/bpg-web-002-caps-webfont.woff')
-            format('woff'),
-        /* Pretty Modern Browsers */ url('../../public/fonts/bpg-web-002-caps-webfont.ttf')
-            format('truetype'),
-        /* Safari, Android, iOS */
-            url('../../public/fonts/bpg-web-002-caps-webfont.svg#bpg_web_002_capsregular')
-            format('svg'); /* Legacy iOS */
-}
 
 @font-face {
     font-family: 'Moderline';
-    src: url('../../public/fonts/modernline.otf'); /* IE9 Compat Modes */
+    src: url('../../public/fonts/modernline.otf');
 }
 
 @font-face {
     font-family: 'Moderline-tail';
-    src: url('../../public/fonts/moderline-tail.otf'); /* IE9 Compat Modes */
+    src: url('../../public/fonts/moderline-tail.otf');
 }
 
 @font-face {
     font-family: 'Canela';
     src: url('../../public/fonts/CanelaText-RegularItalic-Trial.otf');
-    src: url('../../public/fonts/CanelaText-ThinItalic-Trial.otf'); /* IE9 Compat Modes */
+    src: url('../../public/fonts/CanelaText-ThinItalic-Trial.otf');
 }

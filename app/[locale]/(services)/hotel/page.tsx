@@ -1,13 +1,13 @@
 'use client'
 
 import Image from 'next/image'
-import Bath1 from '../../../../public/hotelImages/bathDeluxe/img1.webp'
-import Bath2 from '../../../../public/hotelImages/bathDeluxe/img2.webp'
-import Bath4 from '../../../../public/hotelImages/bathDeluxe/img4.webp'
-import King1 from '../../../../public/hotelImages/kingRoom/img1.jpg'
-import King2 from '../../../../public/hotelImages/kingRoom/img2.jpg'
-import King3 from '../../../../public/hotelImages/kingRoom/img3.jpg'
-import King4 from '../../../../public/hotelImages/kingRoom/img4.jpg'
+import King1 from '../../../../public/images/hotel/img4.webp'
+import King2 from '../../../../public/images/hotel/img4.webp'
+import King3 from '../../../../public/images/hotel/img4.webp'
+import King4 from '../../../../public/images/hotel/img4.webp'
+import Bath2 from '../../../../public/images/hotel/img4.webp'
+import Bath1 from '../../../../public/images/hotel/img4.webp'
+import Bath4 from '../../../../public/images/hotel/img4.webp'
 
 import {
     Sqm,
@@ -78,7 +78,7 @@ const data = [
 export default function page() {
     return (
         <main className="flex min-h-screen w-full flex-col  items-center   ">
-            <h1 className="text-xl mt-28">Rooms & suits</h1>
+            <h1 className="mt-28 text-xl">Rooms & suits</h1>
             <div className="flex-wrap-nowrap mt-10  grid w-full grid-cols-2 grid-rows-2 flex-row  justify-between gap-10 bg-[#D9D9D9] p-10 px-20">
                 <div className=" flex h-full w-full flex-col justify-center ">
                     <h1 className="text-3xl font-bold text-black">Deluxe suite with bath</h1>
