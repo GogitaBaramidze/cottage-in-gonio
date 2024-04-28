@@ -42,6 +42,7 @@ export default function Events() {
                     meetings & weddings
                 </span>
             </div>
+            
             <Carousel opts={{ watchDrag: media }}>
                 <CarouselContent className=" pr-10 md:pr-0 -ml-0 ">
                     {data.map((item, index) => (

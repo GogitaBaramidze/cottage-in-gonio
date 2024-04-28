@@ -91,7 +91,7 @@ export default function Gallery() {
                         >
                             <div className="pl-0 md:pb-32 ">
                                 <Card>
-                                    <CardContent className="z-40 flex  h-[300px] w-full  items-center justify-center p-0 md:h-[250px] lg:h-[400px] ">
+                                    <CardContent className="z-40 flex  h-[300px] w-full  items-center justify-center p-0 md:h-[250px] lg:h-[320px] ">
                                         <Image
                                             src={item.img}
                                             className="h-full w-full cursor-pointer  object-cover     shadow-slate-100 md:rounded-sm  "
