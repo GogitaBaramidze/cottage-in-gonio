@@ -5,6 +5,7 @@ import React, { useEffect, useState } from 'react'
 import Bath1 from '../../../public/images/hotel/img1.webp'
 import Bath2 from '../../../public/images/hotel/img2.webp'
 import Bath3 from '../../../public/images/hotel/img4.webp'
+import test from '../../../public/images/wine/Bottle.jpg'
 import {
     Carousel,
     CarouselContent,
@@ -20,7 +21,7 @@ import Link from 'next/link'
 export default function Gallery() {
     const data = [
         {
-            img: Bath1,
+            img: test,
         },
         {
             img: Bath3,
@@ -57,7 +58,7 @@ export default function Gallery() {
     }
 
     return (
-        <section className="order-y-2 relative flex flex-col items-center justify-center   border-[484848] bg-letterC bg-contain bg-center bg-no-repeat px-7 py-10   md:py-36 lg:px-7 xl:px-16">
+        <section className="order-y-2 relative flex  h-auto flex-col items-center justify-center border-[484848]   bg-letterC bg-contain bg-center bg-no-repeat py-10  md:px-7   md:py-32 lg:px-7 xl:px-16">
             <div className="right-0 top-0 z-50 flex w-full flex-col items-center  md:absolute md:mt-10 md:flex md:w-auto md:items-end">
                 <p className="font-moderline text-6xl md:mr-6  lg:mr-7 lg:text-7xl xl:mr-36">
                     imagin<em className="font-moderlineTail">e</em>
@@ -65,7 +66,7 @@ export default function Gallery() {
                 <p className="ml-28 font-canela text-4xl md:ml-0 md:mr-6  lg:mr-7 lg:mt-1 lg:text-5xl xl:mr-20 xl:mt-2">
                     Yourself here
                 </p>
-                <div className="mb-5 mt-5 flex w-full flex-row items-center justify-start md:mb-0  md:w-4/5 ">
+                <div className="mb-5 mt-5 flex w-full flex-row items-center justify-start px-7 md:mb-0 md:w-4/5  md:px-0 ">
                     <Link
                         href="https://www.instagram.com/chateau.iveri/"
                         target="_blank"
@@ -78,22 +79,22 @@ export default function Gallery() {
                 </div>
             </div>
             <Carousel setApi={setApi} className="z-20 h-full  w-full">
-                <CarouselContent className="-ml-0 pr-12 md:pr-0">
+                <CarouselContent className="-ml-0 pr-8 md:pr-0">
                     {data.map((item, index) => (
                         <CarouselItem
                             key={index}
-                            className="basis px-2  md:basis-1/3 "
+                            className="basis p-0 pr-2 md:basis-1/3 md:px-4 "
                             style={{
                                 transform: getTransformValue(index),
                                 transition: 'transform 0.7s ease-in-out',
                             }}
                         >
-                            <div className="pl-0 md:pb-32 ">
+                            <div className="pl-0 md:pb-28 ">
                                 <Card>
-                                    <CardContent className="z-40 flex w-full items-center justify-center p-0 ">
+                                    <CardContent className="z-40 flex  h-[300px] w-full  items-center justify-center p-0 md:h-[250px] lg:h-[400px] ">
                                         <Image
                                             src={item.img}
-                                            className="h-full w-full  cursor-pointer rounded-sm shadow-slate-100  "
+                                            className="h-full w-full cursor-pointer  object-cover     shadow-slate-100 md:rounded-sm  "
                                             alt="123"
                                         />
                                     </CardContent>

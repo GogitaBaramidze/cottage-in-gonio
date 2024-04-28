@@ -8,7 +8,7 @@ import Test7 from '../../../public/images/kitchen/kitchen7.jpg'
 
 export default function Kitchen() {
     return (
-        <section className="flex h-full w-full flex-col items-center justify-center  gap-5  overflow-hidden bg-[#f1efeb] py-10 shadow-md md:min-h-screen  md:flex-row xl:px-16">
+        <section className="flex min-h-screen w-full flex-col items-center justify-center md:py-20  gap-5  overflow-hidden bg-[#f1efeb] py-10 shadow-md   md:flex-row xl:px-16">
             <div className="relative h-full w-full md:order-2 md:pl-16">
                 <Image
                     src={Test7}
@@ -29,7 +29,7 @@ export default function Kitchen() {
                 <span className="text-center md:text-left">
                     kitchen kitchen kitchen kitchen kitchen kitchen kitchen kitchen kitchen kitchen
                     kitchen kitchen kitchen kitchen kitchen kitchen itchen kitchen kitchen kitchen
-                    kitchen kitchen kitchen kitchen kitchen kitchen kitchen
+                    kitchen kitchen kitchen kitchen kitchen kitchen kitchen 
                 </span>
                 <Button className="flex md:hidden">Button ButtonButtonButton</Button>
                 <Image

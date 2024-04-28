@@ -33,7 +33,7 @@ export default function Events() {
     ]
 
     return (
-        <section className="order-y-2 flex min-h-screen w-full  flex-col border-[#484848] bg-letterC bg-contain  bg-center bg-no-repeat  px-7  py-10  xl:px-16">
+        <section className="order-y-2 flex min-h-screen w-full  flex-col border-[#484848] bg-letterC bg-contain  bg-center bg-no-repeat  px-7  py-10 md:py-20  xl:px-16">
             <div className="mb-10 flex h-auto w-full flex-col items-center">
                 <span className=" mr-24 font-moderline text-5xl md:mr-40">
                     evenT<em className=" font-moderlineTail">s</em>
