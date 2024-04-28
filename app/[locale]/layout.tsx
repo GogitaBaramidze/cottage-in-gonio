@@ -5,6 +5,7 @@ import { ReactNode } from 'react'
 import { dir } from 'i18next'
 import './globals.css'
 import Header from '@/components/header/Header'
+import Footer from '@/components/footer/Footer'
 
 const notoSansGeorgian = Noto_Sans_Georgian({
     weight: ['400', '500', '700'],
@@ -28,6 +29,7 @@ export default async function RootLayout({
                 <TranslationsProvider namespaces={namespaces} locale={locale} resources={resources}>
                     <Header />
                     {children}
+                    <Footer />
                 </TranslationsProvider>
             </body>
         </html>

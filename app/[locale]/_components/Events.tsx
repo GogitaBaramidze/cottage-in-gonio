@@ -33,12 +33,14 @@ export default function Events() {
     ]
 
     return (
-        <section className="order-y-2 flex min-h-screen w-full  flex-col border-[484848] bg-letterC bg-contain  bg-center bg-no-repeat  px-7  py-16  xl:px-16">
+        <section className="order-y-2 flex min-h-screen w-full  flex-col border-[#484848] bg-letterC bg-contain  bg-center bg-no-repeat  px-7  py-16  xl:px-16">
             <div className="mb-10 flex h-auto w-full flex-col items-center">
-                <span className=" mr-32 md:mr-40 font-moderline text-5xl">
+                <span className=" mr-32 font-moderline text-5xl md:mr-40">
                     evenT<em className=" font-moderlineTail">s</em>
                 </span>
-                <span className="ml-12  md:ml-20 mt-2 font-canela text-3xl">meetings & weddings</span>
+                <span className="ml-12  mt-2 font-canela text-3xl md:ml-20">
+                    meetings & weddings
+                </span>
             </div>
             <Carousel opts={{ watchDrag: media }}>
                 <CarouselContent className=" pr-12 md:pr-0">
