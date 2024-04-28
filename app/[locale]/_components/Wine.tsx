@@ -20,7 +20,7 @@ export default function Wine() {
             {loading ? (
                 <Loading />
             ) : (
-                <section className="md:py-b grid min-h-screen w-full grid-cols-1 items-start justify-center  gap-6  bg-[#f1efeb] px-7 py-5 shadow-lg  md:grid-cols-3 md:items-center  md:gap-10 xl:px-16">
+                <section className="md:py-b grid min-h-screen w-full grid-cols-1 items-start justify-center  gap-6  bg-[#f1efeb] px-7 py-10 shadow-lg  md:grid-cols-3 md:items-center  md:gap-10 xl:px-16">
                     <div className="flex h-auto w-full flex-col rounded-md ">
                         <h1 className="font-bgCaps mt-4 text-xl text-[#111]">ღვინის მოწრუპა</h1>
                         <p className="mb-4 mt-4 rounded-md text-[#111]">

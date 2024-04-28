@@ -33,9 +33,9 @@ export default function Events() {
     ]
 
     return (
-        <section className="order-y-2 flex min-h-screen w-full  flex-col border-[#484848] bg-letterC bg-contain  bg-center bg-no-repeat  px-7  py-16  xl:px-16">
+        <section className="order-y-2 flex min-h-screen w-full  flex-col border-[#484848] bg-letterC bg-contain  bg-center bg-no-repeat  px-7  py-10  xl:px-16">
             <div className="mb-10 flex h-auto w-full flex-col items-center">
-                <span className=" mr-32 font-moderline text-5xl md:mr-40">
+                <span className=" mr-24 font-moderline text-5xl md:mr-40">
                     evenT<em className=" font-moderlineTail">s</em>
                 </span>
                 <span className="ml-12  mt-2 font-canela text-3xl md:ml-20">
@@ -43,21 +43,21 @@ export default function Events() {
                 </span>
             </div>
             <Carousel opts={{ watchDrag: media }}>
-                <CarouselContent className=" pr-12 md:pr-0">
+                <CarouselContent className=" pr-10 md:pr-0 -ml-0 ">
                     {data.map((item, index) => (
                         <CarouselItem
-                            className="px-2 sm:basis-1/2  md:px-5  lg:basis-1/3 lg:px-14"
+                            className="px-2 sm:basis-1/2  md:pl-6  lg:basis-1/3 lg:px-10"
                             key={index}
                         >
                             <div className="h-full w-full">
-                                <Card className="h-full w-full">
-                                    <CardContent className="relative h-full w-full  p-0 ">
+                                <Card className="h-full w-full overflow-hidden">
+                                    <CardContent className="relative h-full w-full  p-0   ">
                                         <Image
                                             src={item.img}
                                             alt="123"
                                             className="h-full w-full rounded-lg object-cover "
                                         />
-                                        <div className="absolute bottom-0 left-0 flex h-full  w-full flex-col justify-end pb-10">
+                                        <div className="absolute bottom-0 left-0 flex h-full  w-full flex-col justify-end pb-10 ">
                                             <span className="bg-black p-3 font-canela  text-3xl text-white opacity-60">
                                                 {item.header}
                                             </span>

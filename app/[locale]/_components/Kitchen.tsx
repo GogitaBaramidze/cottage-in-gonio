@@ -8,7 +8,7 @@ import Test7 from '../../../public/images/kitchen/kitchen7.jpg'
 
 export default function Kitchen() {
     return (
-        <section className=" flex h-full w-full flex-col items-center justify-center  gap-5  overflow-hidden bg-[#f1efeb] py-5 shadow-md md:min-h-screen  md:flex-row xl:px-16">
+        <section className="flex h-full w-full flex-col items-center justify-center  gap-5  overflow-hidden bg-[#f1efeb] py-10 shadow-md md:min-h-screen  md:flex-row xl:px-16">
             <div className="relative h-full w-full md:order-2 md:pl-16">
                 <Image
                     src={Test7}
@@ -20,7 +20,7 @@ export default function Kitchen() {
                 </div>
                 <Button className="mt-6 hidden md:flex">Button ButtonButtonButton</Button>
             </div>
-            <div className="mt-20 flex h-full w-full flex-col gap-2  px-6  md:mt-0 md:w-2/3  ">
+            <div className="mt-20 flex h-full w-full flex-col gap-2  px-6 md:pl-7 md:pr-0  xl:pl-0 md:mt-0 md:w-2/3  ">
                 <span className="  text-left font-moderline text-4xl">
                     Restouran<em className=" font-moderlineTail">t</em>
                 </span>
