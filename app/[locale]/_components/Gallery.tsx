@@ -78,7 +78,7 @@ export default function Gallery() {
                 </div>
             </div>
             <Carousel setApi={setApi} className="z-20 h-full  w-full">
-                <CarouselContent className="pr-16 md:pr-0">
+                <CarouselContent className="-ml-0 pr-12 md:pr-0">
                     {data.map((item, index) => (
                         <CarouselItem
                             key={index}
@@ -90,10 +90,10 @@ export default function Gallery() {
                         >
                             <div className="pl-0 md:pb-32 ">
                                 <Card>
-                                    <CardContent className="z-40 flex    w-full items-center justify-center p-0 ">
+                                    <CardContent className="z-40 flex w-full items-center justify-center p-0 ">
                                         <Image
                                             src={item.img}
-                                            className="h-full w-full   cursor-pointer rounded-sm shadow-slate-100  "
+                                            className="h-full w-full  cursor-pointer rounded-sm shadow-slate-100  "
                                             alt="123"
                                         />
                                     </CardContent>
