@@ -89,7 +89,7 @@ export default function Gallery() {
                                 transition: 'transform 0.7s ease-in-out',
                             }}
                         >
-                            <div className="pl-0 md:pb-28 ">
+                            <div className="pl-0 md:pb-32 ">
                                 <Card>
                                     <CardContent className="z-40 flex  h-[300px] w-full  items-center justify-center p-0 md:h-[250px] lg:h-[400px] ">
                                         <Image
