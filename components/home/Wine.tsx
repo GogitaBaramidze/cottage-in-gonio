@@ -59,7 +59,7 @@ export default function Wine() {
                     </div>
 
                     <div className="hidden h-2/3 items-start justify-center overflow-hidden rounded-md  border border-[#484848] shadow-xl  md:flex">
-                        {video && <Loading />}
+                        {video && <div className="h-2/3 w-full"></div>}
                         <ReactPlayer
                             url="./images/wine/WineVideo.mp4"
                             width="100%"

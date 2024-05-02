@@ -27,9 +27,11 @@ export default function Header() {
                         {t('main')}
                     </span>
                 </Link>
-                <span className="cursor-pointer  underline-offset-8 hover:underline md:ml-7 ">
-                    {t('tourism')}
-                </span>
+                <Link href="/hotel">
+                    <span className="cursor-pointer  underline-offset-8 hover:underline md:ml-7 ">
+                        Hotel
+                    </span>
+                </Link>
                 <span className="cursor-pointer  underline-offset-8 hover:underline md:ml-7 ">
                     {t('winery')}
                 </span>

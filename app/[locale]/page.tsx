@@ -12,7 +12,6 @@ async function Home() {
             <Cover />
             <Events />
             <Kitchen />
-
             <Wine />
             <Gallery />
         </main>
