@@ -2,11 +2,11 @@
 
 import { useEffect, useState } from 'react'
 import ReactPlayer from 'react-player'
-import Cheers from '../../../public/images/wine/Cheers.jpg'
-import WineSort from '../../../public/images/wine/WineSort.jpg'
+import Cheers from '../../public/images/wine/Cheers.jpg'
+import WineSort from '../../public/images/wine/WineSort.jpg'
 import Image from 'next/image'
 import { Button } from '@/components/ui/button'
-import Loading from '../loading'
+import Loading from '../../app/[locale]/loading'
 
 export default function Wine() {
     const [video, setVideo] = useState(true)
@@ -20,7 +20,7 @@ export default function Wine() {
             {loading ? (
                 <Loading />
             ) : (
-                <section className="md:py-b flex min-h-screen w-full flex-col items-start justify-center gap-6  bg-[#f1efeb]  px-7 py-10 shadow-lg md:flex-row md:items-center md:gap-10  md:py-20 xl:px-16">
+                <section className="md:py-b flex min-h-screen w-full flex-col items-start justify-center gap-6  bg-[#f1efeb]  px-7 py-10 shadow-lg md:flex-row md:items-center md:gap-10  md:py-20 xl:px-24">
                     <div className="flex h-full w-full flex-col rounded-md ">
                         <h1 className="font-bgCaps mt-4 text-xl text-[#111]">ღვინის მოწრუპა</h1>
                         <p className="mb-4 mt-4 rounded-md text-[#111]">

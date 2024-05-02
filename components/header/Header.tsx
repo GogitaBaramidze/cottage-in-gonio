@@ -10,7 +10,7 @@ export default function Header() {
     const { t } = useTranslation()
 
     return (
-        <main className="  z-50  flex   w-full flex-row items-center justify-between bg-[#f1efeb] px-5  py-2 shadow-md   md:px-7 md:py-3 xl:px-16 xl:py-3  ">
+        <main className="  z-50  flex    w-full flex-row items-center justify-between bg-[#f1efeb] px-5  py-2 shadow-md   md:px-7 md:py-3 xl:px-24 xl:py-3  ">
             <div className="relative h-16 w-20 md:h-16 md:w-20 xl:h-20 xl:w-24">
                 <Link href="/">
                     <Image

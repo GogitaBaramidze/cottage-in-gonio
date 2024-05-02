@@ -2,10 +2,10 @@
 
 import Image from 'next/image'
 import React, { useEffect, useState } from 'react'
-import Bath1 from '../../../public/images/hotel/img1.webp'
-import Bath2 from '../../../public/images/hotel/img2.webp'
-import Bath3 from '../../../public/images/hotel/img4.webp'
-import test from '../../../public/images/wine/Bottle.jpg'
+import Bath1 from '../../public/images/hotel/img1.webp'
+import Bath2 from '../../public/images/hotel/img2.webp'
+import Bath3 from '../../public/images/hotel/img4.webp'
+import test from '../../public/images/wine/Bottle.jpg'
 import {
     Carousel,
     CarouselContent,

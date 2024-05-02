@@ -1,17 +1,18 @@
 'use server'
 
-import Events from './_components/Events'
-import Gallery from './_components/Gallery'
-import Kitchen from './_components/Kitchen'
-import Cover from './_components/Cover'
-import Wine from './_components/Wine'
+import Events from '../../components/home/Events'
+import Gallery from '../../components/home/Gallery'
+import Kitchen from '../../components/home/Kitchen'
+import Cover from '../../components/home/Cover'
+import Wine from '../../components/home/Wine'
 
 async function Home() {
     return (
         <main className="flex h-full w-full flex-col bg-pageBg">
             <Cover />
-            <Kitchen />
             <Events />
+            <Kitchen />
+
             <Wine />
             <Gallery />
         </main>

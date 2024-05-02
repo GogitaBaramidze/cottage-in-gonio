@@ -2,13 +2,13 @@
 
 import Image from 'next/image'
 import { Button } from '@/components/ui/button'
-import Test5 from '../../../public/images/kitchen/kitchen5.jpg'
-import Test6 from '../../../public/images/kitchen/kitchen6.jpg'
-import Test7 from '../../../public/images/kitchen/kitchen7.jpg'
+import Test5 from '../../public/images/kitchen/kitchen5.jpg'
+import Test6 from '../../public/images/kitchen/kitchen6.jpg'
+import Test7 from '../../public/images/kitchen/kitchen7.jpg'
 
 export default function Kitchen() {
     return (
-        <section className="flex min-h-screen w-full flex-col items-center justify-center md:py-20  gap-5  overflow-hidden bg-[#f1efeb] py-10 shadow-md   md:flex-row xl:px-16">
+        <section className="flex min-h-screen w-full flex-col items-center justify-center md:py-20  gap-5  overflow-hidden bg-[#f1efeb] py-10 shadow-md   md:flex-row xl:px-24">
             <div className="relative h-full w-full md:order-2 md:pl-16">
                 <Image
                     src={Test7}

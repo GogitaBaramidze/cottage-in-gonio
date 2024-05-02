@@ -31,7 +31,7 @@ export default function Footer() {
         <>
             <section className="bg-bottleBg relative flex h-auto w-full flex-col bg-cover bg-center bg-no-repeat">
                 <div className="absolute h-full w-full  bg-[#71716c] opacity-70 "></div>
-                <div className="z-50 w-full px-5 py-2 pt-12  md:px-7 md:pt-16 xl:px-16 xl:pt-20">
+                <div className="z-50 w-full px-5 py-2 pt-12  md:px-7 md:pt-16 xl:px-24 xl:pt-20">
                     <div className="flex flex-col px-6  md:flex-row md:items-start md:justify-between md:px-0">
                         <span className="text-center font-moderline text-4xl font-bold text-white md:text-5xl">
                             Chateau Iveri
