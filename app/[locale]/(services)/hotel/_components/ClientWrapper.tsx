@@ -35,7 +35,6 @@ import { Card, CardContent } from '@/components/ui/card'
 import Autoplay from 'embla-carousel-autoplay'
 import Loading from '../../../loading'
 import { useEffect, useState } from 'react'
-import Hotel from '@/components/videos/Hotel'
 
 const data = [
     {
@@ -89,8 +88,6 @@ export default function ClientWrapper() {
                 <Loading />
             ) : (
                 <main className="flex min-h-screen w-full flex-col  items-center">
-                    <Hotel />
-
                     <h1 className="mt-28 text-xl">Rooms & suits</h1>
                     <div className="flex-wrap-nowrap mt-10  grid w-full grid-cols-2 grid-rows-2 flex-row  justify-between gap-10 bg-[#D9D9D9] p-10 px-20">
                         <div className=" flex h-full w-full flex-col justify-center ">

@@ -7,24 +7,26 @@ import TestImage3 from '../../public/images/weddingTest5.jpg'
 import { Carousel, CarouselContent, CarouselItem } from '@/components/ui/carousel'
 import { Card, CardContent } from '@/components/ui/card'
 import { useMediaQuery } from 'react-responsive'
+import { useTranslation } from 'react-i18next'
 
 export default function Events() {
+    const { t } = useTranslation()
     const media = useMediaQuery({
         query: '(max-width: 1024px)',
     })
     const data = [
         {
             img: TestImage1,
-            header: 'Refined Meetings',
+            header: t('corporateParties'),
         },
         {
             img: TestImage3,
-            header: 'Timeless Weddings',
+            header: t('weddings'),
         },
 
         {
             img: Meeting,
-            header: 'Timeless Weddings',
+            header: t('businessMeetings'),
         },
     ]
 
@@ -55,8 +57,8 @@ export default function Events() {
                                             className="h-full w-full rounded-lg object-cover "
                                         />
                                         <div className="absolute bottom-0 left-0 flex h-full  w-full flex-col justify-end  ">
-                                            <span className="cursor-pointer bg-black  p-4 text-center  font-canela text-3xl  text-white opacity-60 hover:underline hover:underline-offset-2">
-                                                {item.header} ----
+                                            <span className="cursor-pointer bg-black  text-base p-4 text-center  font-canela md:text-xl  text-white opacity-70 hover:underline hover:underline-offset-2">
+                                                {item.header}
                                             </span>
                                         </div>
                                     </CardContent>

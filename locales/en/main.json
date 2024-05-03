@@ -1,10 +1,15 @@
 {
     "main": "Main",
     "tourism": "Tourism And Hospitality",
-
     "enjoy": "Best place to enjoy",
-    "winery": "Winery",
-    "about": "About us",
 
-    "chateau": "Chateau Iveri"
+    "about": "About us",
+    "chateau": "Chateau Iveri",
+
+    "viewMore": "View more",
+    "corporateParties": "Corporate events",
+    "weddings": "Weddings",
+    "businessMeetings": "Business Meetings",
+  
+    "winery": "Winery"
 }

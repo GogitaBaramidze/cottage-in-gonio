@@ -58,7 +58,7 @@ export default function Gallery() {
     }
 
     return (
-        <section className="order-y-2 relative flex  h-auto flex-col items-center justify-center border-[484848]   bg-letterC bg-contain bg-center bg-no-repeat py-10  md:px-7   md:py-32 lg:px-7 xl:px-16">
+        <section className="order-y-2 relative flex  h-auto flex-col items-center justify-center border-[484848]   bg-letterC bg-contain bg-center bg-no-repeat py-10  md:px-7   md:py-32 lg:px-7 xl:px-0">
             <div className="right-0 top-0 z-50 flex w-full flex-col items-center  md:absolute md:mt-10 md:flex md:w-auto md:items-end">
                 <p className="font-moderline text-6xl md:mr-6  lg:mr-7 lg:text-7xl xl:mr-36">
                     imagin<em className="font-moderlineTail">e</em>
