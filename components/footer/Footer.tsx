@@ -1,4 +1,6 @@
 import { Message, PhoneCall, WhiteFb, WhiteInsta, WhiteWatsapp } from '../svgs'
+import Bottle from '../../public/images/wine/Bottle.jpg'
+import Image from 'next/image'
 
 export const Social = () => {
     return (
@@ -29,7 +31,8 @@ export const Social = () => {
 export default function Footer() {
     return (
         <>
-            <section className="bg-bottleBg relative flex h-auto w-full flex-col bg-cover bg-center bg-no-repeat">
+            <section className="relative flex h-auto w-full flex-col">
+                <Image src={Bottle} className="absolute h-full w-full object-cover " alt="123" />
                 <div className="absolute h-full w-full  bg-[#71716c] opacity-70 "></div>
                 <div className="z-50 w-full px-5 py-2 pt-12  md:px-7 md:pt-16 xl:px-24 xl:pt-20">
                     <div className="flex flex-col px-6  md:flex-row md:items-start md:justify-between md:px-0">
