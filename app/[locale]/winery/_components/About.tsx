@@ -9,7 +9,8 @@ export default function About() {
                 From humble beginnings, Chateau Elan Winery has emerged as one of the largest and
                 most awarded wineries on the East Coast. Were honored to offer more than 30 wines
                 produced with grapes grown in our Braselton and south of Georgia vineyards, as well
-                as grapes hand-picked and transported
+                as grapes hand-picked and transported, grown in our Braselton and south of Georgia
+                vineyards, as well as grapes hand-picked and transported
             </p>
         </section>
     )
