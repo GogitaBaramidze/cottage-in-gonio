@@ -1,13 +1,13 @@
 import About from './_components/About'
 import Cover from './_components/Cover'
-import Kind from './_components/Kind'
+import List from './_components/List'
 
-export default function page() {
+export default async function page() {
     return (
         <main className="h-auto w-full bg-white bg-pageBg ">
             <Cover />
             <About />
-            <Kind />
+            <List />
         </main>
     )
 }
