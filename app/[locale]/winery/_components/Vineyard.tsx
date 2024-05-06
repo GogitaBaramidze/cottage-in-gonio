@@ -1,53 +1,24 @@
 import Image from 'next/image'
+import Garden from '../../../../public/images/wine/Garden.jpg'
 
-import Taste from '../../../../public/images/wine/Taste.jpg'
-import GrapesBg from '../../../../public/images/wine/GrapesBg.jpg'
-import Making from '../../../../public/images/wine/Making.jpg'
-import InVine from '../../../../public/images/wine/InVine.jpg'
-import Collect from '../../../../public/images/wine/Collect.jpg'
-import Taste3 from '../../../../public/images/wine/Taste3.jpg'
-import {
-    Carousel,
-    CarouselContent,
-    CarouselItem,
-    CarouselNext,
-    CarouselPrevious,
-} from '@/components/ui/carousel'
-import { CardContent } from '@/components/ui/card'
-
-export default function VineYard() {
-    const data = [
-        { img: Taste },
-        { img: Collect },
-        { img: InVine },
-        { img: Taste3 },
-        { img: Making },
-    ]
+export default function Vineyard() {
     return (
-        <section className="relative h-auto w-full pb-10">
-            <Image src={GrapesBg} className="h-[250px] w-full  object-cover md:h-full" alt="123" />
-            <div className="z-10 -mt-48  flex h-full w-full flex-col items-center md:-mt-[20%]   xl:px-24">
-                <h1 className="font-canela text-3xl text-white md:text-5xl">Tours and Tastings</h1>
-                <Carousel opts={{ loop: true }} className="mt-6 h-full w-full md:mt-14">
-                    <CarouselContent className="pr-16 md:pr-32">
-                        {data.map((item, index) => (
-                            <CarouselItem key={index} className="md:basis-1/3 md:px-4">
-                                <CardContent className="flex items-center justify-center   p-0">
-                                    <Image
-                                        src={item.img}
-                                        alt="img"
-                                        className="h-[400px] w-full  object-cover"
-                                    />
-                                </CardContent>
-                            </CarouselItem>
-                        ))}
-                    </CarouselContent>
-
-                    <div className="hidden md:block">
-                        <CarouselPrevious />
-                        <CarouselNext />
-                    </div>
-                </Carousel>
+        <section className="h-auto w-full xl:px-24  py-10">
+            <div className="flex h-full w-full flex-col items-center   gap-10 md:gap-20 md:flex-row">
+                <Image
+                    src={Garden}
+                    className="h-[350px] object-cover md:h-[450px] md:w-[550px]"
+                    alt="123"
+                />
+                <div className="flex h-full w-full flex-col items-center gap-6  md:gap-10 px-5 ">
+                    <h1>qegqegqegqe qeg qeg qeg qeg </h1>
+                    <span className='text-center'>
+                        qegqeg qeg qeg qeg eqg eqg qeg qeg qeqegqeg qeg qeg qeg eqg eqg qeg qeg
+                        qeqegqeg qeg qeg qeg eqg eqg qeg qeg qeqegqeg qeg qeg qeg eqg eqg qeg qeg
+                        qeqegqeg qeg qeg qeg eqg eqg qeg qeg qe qegqeg qeg qeg qeg eqg eqg qeg qeg
+                        qeqegqeg qeg qeg qeg eqg eqg qeg
+                    </span>
+                </div>
             </div>
         </section>
     )

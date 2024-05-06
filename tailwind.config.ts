@@ -31,6 +31,8 @@ const config = {
                 headerBg: "url('/images/headerBg.jpg')",
                 vine: "url('/images/vine.jpg')",
                 bottleBg: "url('/images/wine/Bottle.jpg')",
+                stain: "url('/images/wine/Stain.webp')",
+                stainRotate: "url('/images/wine/stainRotate.webp')",
             },
 
             colors: {
