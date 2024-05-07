@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import Garden from '../../../../public/images/wine/Garden.jpg'
 
-export default function Vineyard() {
+export default function WineYard() {
     return (
         <section className="h-auto w-full xl:px-24  py-10">
             <div className="flex h-full w-full flex-col items-center   gap-10 md:gap-20 md:flex-row">
