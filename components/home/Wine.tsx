@@ -74,6 +74,7 @@ export default function Wine() {
                             height="100%"
                             playing={true}
                             muted={true}
+                            playsinline={true}
                             loop={true}
                             onReady={() => setVideo(false)}
                             onStart={() => setVideo(false)}
