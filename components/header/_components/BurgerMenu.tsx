@@ -3,6 +3,7 @@ import { BurgerIcon, EmailIcon, FbIcon, InstaIcon, WhatsappIcon } from '../../sv
 import { useTranslation } from 'react-i18next'
 import { useRouter } from 'next/navigation'
 import { PhoneIcon } from '../../svgs'
+import Link from 'next/link'
 
 export function BurgerMenu() {
     const { t } = useTranslation()
@@ -32,9 +33,11 @@ export function BurgerMenu() {
                         >
                             {t('tourism')}
                         </SheetClose>
-                        <SheetClose className="cursor-pointer text-left   underline-offset-8 hover:underline md:ml-7 ">
-                            {t('winery')}
-                        </SheetClose>
+                        <Link href="/winery">
+                            <SheetClose className="cursor-pointer text-left   underline-offset-8 hover:underline md:ml-7 ">
+                                {t('winery')}
+                            </SheetClose>
+                        </Link>
                         <SheetClose className="cursor-pointer text-left  underline-offset-8 hover:underline  md:ml-7">
                             {t('about')}
                         </SheetClose>
