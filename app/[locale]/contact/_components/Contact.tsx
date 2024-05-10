@@ -1,4 +1,7 @@
 'use client'
+import { Button } from '@/components/ui/button'
+import { Input } from '@/components/ui/input'
+import { Textarea } from '@/components/ui/textarea'
 import React, { useState } from 'react'
 
 export default function Contact() {
@@ -29,55 +32,34 @@ export default function Contact() {
     }
 
     return (
-        <section className="h-auto w-full px-24 ">
-            <div className=" relative h-full w-full  bg-[#f1efeb]">
-                <div className="absolute right-48 top-8 flex h-auto w-full flex-row items-center ">
-                    <div className=" h-[1px] w-4/5 bg-black"></div>
-                    <span>contact us</span>
+        <section className="h-auto w-full px-5 md:px-7 lg:px-40 xl:px-64 ">
+            <div className=" relative h-full w-full  rounded-lg bg-[#f1efeb] shadow-md">
+                <div className="absolute right-6 top-8 flex h-auto w-full flex-row items-center md:right-7 lg:right-64 ">
+                    <div className=" h-[1px] w-3/5 bg-black lg:w-4/5 "></div>
+                    <span className="ml-4 text-sm uppercase">contact us</span>
                 </div>
                 <form
                     onSubmit={onSubmit}
-                    className="flex h-auto w-full  flex-col items-end px-40 py-24"
+                    className="flex h-auto w-full  flex-col items-end px-10 py-20 md:px-20 lg:px-40"
                 >
-                    <div className="mb-10 grid h-auto w-full  grid-cols-2 gap-10">
-                        <input
-                            name="firstname"
-                            className="h-10 border border-black"
-                            placeholder="firstname"
-                            required
-                        />
-                        <input
-                            name="lastname"
-                            className="h-10 border border-black"
-                            placeholder="lastname"
-                            required
-                        />
-                        <input
-                            name="email"
-                            type="email"
-                            className="h-10 border border-black"
-                            placeholder="email"
-                            required
-                        />
-                        <input
-                            name="phone"
-                            type="number"
-                            className="h-10 border border-black"
-                            placeholder="phone"
-                        />
+                    <div className="mb-6 grid h-auto w-full  grid-cols-1 gap-6 md:grid-cols-2">
+                        <Input name="firstname" placeholder="firstname" required />
+                        <Input name="lastname" placeholder="lastname" required />
+                        <Input name="email" type="email" placeholder="email" required />
+                        <Input name="phone" type="number" placeholder="phone (optional)" />
                     </div>
-                    <textarea
+                    <Textarea
                         name="message"
                         className="mb-10 h-[200px] w-full border border-black"
                         placeholder="Your message"
                         required
-                    ></textarea>
-                    <button type="submit" className="right-0   border  border-black">
-                        submit
-                    </button>
+                    />
+                    <div className="flex h-auto w-full flex-row items-center justify-end">
+                        <span className="mr-10 text-[green]">{result}</span>
+                        <Button type="submit">submit</Button>
+                    </div>
                 </form>
             </div>
-            <span>{result}</span>
         </section>
     )
 }
