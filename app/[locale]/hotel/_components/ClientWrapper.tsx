@@ -33,7 +33,7 @@ import {
 } from '@/components/ui/carousel'
 import { Card, CardContent } from '@/components/ui/card'
 import Autoplay from 'embla-carousel-autoplay'
-import Loading from '../../../loading'
+import Loading from '../../loading'
 import { useEffect, useState } from 'react'
 
 const data = [

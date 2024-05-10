@@ -16,7 +16,6 @@ async function Home() {
             <Hotel />
             <Wine />
             <Gallery />
-          
         </main>
     )
 }
