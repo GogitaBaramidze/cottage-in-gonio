@@ -10,7 +10,7 @@ export default function Header() {
     const { t } = useTranslation()
 
     return (
-        <main className=" absolute z-50 flex  w-full    flex-row items-center justify-between bg-[#f1efeb] px-5 py-2  opacity-90 shadow-md   md:px-7 md:py-3 xl:px-24 xl:py-3  ">
+        <main className="  flex  w-full    flex-row items-center justify-between bg-[#f1efeb] px-5 py-2  opacity-90 shadow-md   md:px-7 md:py-3 xl:px-24 xl:py-3  ">
             <div className="relative h-16 w-20 md:h-16 md:w-20 xl:h-20 xl:w-24">
                 <Link href="/">
                     <Image
@@ -37,9 +37,16 @@ export default function Header() {
                         {t('winery')}
                     </span>
                 </Link>
-                <span className="cursor-pointer underline-offset-8 hover:underline  md:ml-7">
-                    {t('about')}
-                </span>
+                <Link href="/about">
+                    <span className="cursor-pointer underline-offset-8 hover:underline  md:ml-7">
+                        {t('about')}
+                    </span>
+                </Link>
+                <Link href="/contact">
+                    <span className="cursor-pointer underline-offset-8 hover:underline  md:ml-7">
+                        {t('contact')}
+                    </span>
+                </Link>
                 <LangChoose className={''} spanClassname={''} />
             </div>
 
