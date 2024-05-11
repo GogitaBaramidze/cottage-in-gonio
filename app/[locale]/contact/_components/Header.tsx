@@ -1,12 +1,11 @@
-'use client'
-
 import { FbIcon, InstaIcon, WhatsappIcon } from '@/components/svgs'
-import { useTranslation } from 'react-i18next'
+import initTranslations from '@/libs/i18next/i18n'
 
-export default function Header() {
-    const { t } = useTranslation()
+async function Header({ locale }: { locale: string }) {
+    const i18nNamespaces = ['contact']
+    const { t } = await initTranslations(locale, i18nNamespaces)
     return (
-        <section className="flex h-auto w-full flex-col items-center gap-6 md:gap-10 px-5">
+        <section className="flex h-auto w-full flex-col items-center gap-6 px-5 md:gap-10">
             <h1 className=" font-moderline text-4xl lg:text-5xl">{t('chateau')}</h1>
             <div className="grid grid-cols-1 gap-x-4   gap-y-3 text-sm md:grid-cols-2 md:gap-y-4 ">
                 <a
@@ -59,3 +58,5 @@ export default function Header() {
         </section>
     )
 }
+
+export default Header

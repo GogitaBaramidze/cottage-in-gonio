@@ -1,7 +1,14 @@
 {
+    "chateau": "Chateau Iveri",
     "address": "Address",
     "addressItem": "Georgia, Adjara, Varjanisi Keda",
     "phone": "Phone",
     "email": "Email",
-    "contactUs": "Contact Us"
+    "contactUs": "Contact Us",
+    "directions": "Get Directions",
+    "firstname": "Firstname *",
+    "lastname": "Lastname *",
+    "message": "message *",
+    "emailChoose": "Email",
+    "send": "Submit"
 }
