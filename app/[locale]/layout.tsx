@@ -19,7 +19,7 @@ export default async function RootLayout({
     children: ReactNode
     params: { locale: string }
 }) {
-    const namespaces = ['main']
+    const namespaces = ['main', 'contact']
 
     const { resources } = await initTranslations(locale, namespaces)
 
