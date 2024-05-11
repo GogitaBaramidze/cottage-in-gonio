@@ -1,0 +1,38 @@
+.absolute {
+    position: absolute;
+    font-weight: medium;
+    color: white;
+}
+
+.en {
+    top: 25%;
+    font-family: canela;
+    font-size: 56px;
+    line-height: 1;
+    left: 5%;
+}
+
+@media (min-width: 768px) {
+    .en {
+        font-size: 96px;
+        left: auto;
+        right: 20% !important;
+    }
+}
+
+.ge {
+    left: 5%;
+    top: 25%;
+    font-family: georgian;
+    font-size: 32px;
+    line-height: 1.5;
+}
+
+@media (min-width: 768px) {
+    .ge {
+        font-size: 60px;
+        left: auto;
+        right: 20% !important;
+        line-height: 1.8;
+    }
+}

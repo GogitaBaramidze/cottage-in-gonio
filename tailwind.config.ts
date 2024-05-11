@@ -14,6 +14,7 @@ const config = {
             moderline: ['Moderline', 'cursive'],
             moderlineTail: ['Moderline-tail', 'cursive'],
             canela: ['Canela', 'sans-serif'],
+            georgian: ['Georgian', 'sans-serif'],
         },
         container: {
             center: true,

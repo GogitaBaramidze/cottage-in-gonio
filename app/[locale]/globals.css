@@ -13,7 +13,6 @@ body {
     min-height: 100vh;
     background-color: #f5f5f5;
     color: #484848;
-
 }
 
 @layer base {
@@ -89,10 +88,14 @@ body {
     }
 }
 
-
 @font-face {
     font-family: 'Moderline';
     src: url('../../public/fonts/modernline.otf');
+}
+
+@font-face {
+    font-family: 'Georgian';
+    src: url('../../public/fonts/Georgian.ttf');
 }
 
 @font-face {

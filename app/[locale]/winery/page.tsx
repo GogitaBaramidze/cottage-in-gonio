@@ -5,10 +5,10 @@ import Gallery from './_components/Gallery'
 import Info from './_components/Info'
 import WineYard from './_components/WineYard'
 
-export default async function page() {
+export default async function page({ params: { locale } }: { params: { locale: string } }) {
     return (
         <main className="h-auto w-full bg-white bg-pageBg ">
-            <Cover />
+            <Cover locale={locale} />
             <About />
             <Gallery />
             <Info />
