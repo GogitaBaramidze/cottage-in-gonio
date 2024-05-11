@@ -2,5 +2,16 @@
     "from": "From",
     "grape": "grape",
     "s": "s",
-    "toGlass": "to glass"
+    "toGlass": "to glass",
+    "wineHead": "Vineyards",
+    "wineText": "Nestled in the breathtakingly scenic region of Ajara, Georgia, lies the enchanting Chateau Iveri. Embraced by the idyllic Ajaristskali gorge, just 50 km from the vibrant city of Batumi, our vineyards are a hidden gem at an elevation of 500 meters above sea level. Here, the sun kisses the land with an intensity that brings forth the most exquisite grapes, fostering an environment unlike any other for the art of winemaking.",
+    "wineText2": "Spanning across one hectare of land, our vineyard is a testament to tradition and heritage. We cultivate a variety of wine grapes, including the distinguished Tsolikouri, Chkaveri, and Satsuri, alongside over 10 endemic species that contribute to our unique blends. At Chateau Iveri, we proudly preserve our centuries-old family winemaking techniques, with ancient Kvevris—large clay pots buried in the earth—bearing witness to the rich history of grape cultivation and winemaking culture.",
+    "vintage": "Vintage",
+    "vintageText": "Every autumn, we celebrate the age-old tradition of 'Rtveli' with our esteemed guests. Join us in October and November for this grape harvest event, where you can immerse yourself in the joys of picking grapes, pressing wine, and experiencing a traditional feast filled with laughter, dancing, and heartfelt toasts. Delight in the process of crafting traditional dishes and partake in the merriment that surrounds this special time of year.",
+
+    "listHead1": "Our",
+    "listHead2": "wines",
+    "tsolikauri": "Tsolikouri",
+    "chxaveri": "Chkhaveri",
+    "satsuri": "Satsuri"
 }

@@ -4,6 +4,7 @@ import { useTranslation } from 'react-i18next'
 import { useRouter } from 'next/navigation'
 import { PhoneIcon } from '../../svgs'
 import Link from 'next/link'
+import LangChoose from './LangChoose'
 
 export function BurgerMenu() {
     const { t } = useTranslation()
@@ -38,6 +39,7 @@ export function BurgerMenu() {
                                 {t('winery')}
                             </SheetClose>
                         </Link>
+                        <LangChoose className={''} spanClassname={''} />
                         <SheetClose className="cursor-pointer text-left  underline-offset-8 hover:underline  md:ml-7">
                             {t('about')}
                         </SheetClose>

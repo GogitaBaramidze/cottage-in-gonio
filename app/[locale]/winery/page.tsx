@@ -11,9 +11,9 @@ export default async function page({ params: { locale } }: { params: { locale: s
             <Cover locale={locale} />
             <About />
             <Gallery />
-            <Info />
-            <WineYard />
-            <List />
+            <Info locale={locale} />
+            <WineYard locale={locale} />
+            <List locale={locale} />
         </main>
     )
 }
